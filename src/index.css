@@ -219,11 +219,14 @@ main {
     cursor: none;
 }
 
-.m svg {
+.m svg,
+.m img {
     display: block;
     position: relative;
     width: 100%;
     height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
 }
 
 .m::before {
@@ -458,10 +461,12 @@ main {
     display: block;
 }
 
-.shot svg {
+.shot svg,
+.shot img {
     display: block;
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .meta {

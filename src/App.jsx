@@ -5,80 +5,80 @@ import confetti from 'canvas-confetti';
    1. IMAGE SOURCES & ASSETS
 ========================================= */
 
-const MODEL_SRC = '/model_transparent.png';
+const MODEL_SRC = '/model_9033.png';
 
 const ITEMS = [
   {
     name: 'Zari Embroidered Kurta',
     price: '₹2,499',
     priceVal: 2499,
-    img: '/piece_kurta_card.jpg'
+    img: '/kurta_9033.png'
   },
   {
     name: 'Flared Palazzo Pants',
     price: '₹1,450',
     priceVal: 1450,
-    img: '/piece_palazzo_card.jpg'
+    img: '/palazzo_9033.png'
   },
   {
     name: 'Embellished Organza Dupatta',
     price: '₹980',
     priceVal: 980,
-    img: '/piece_dupatta_card.jpg'
+    img: '/dupatta_9033.png'
   },
   {
     name: 'Gul-e-Noor 3-Piece Festive Set',
     price: '₹4,929',
     priceVal: 4929,
-    img: '/piece_kurta_card.jpg'
+    img: '/model_9033.png'
   },
   {
-    name: 'Mustard Silk Palazzo Trousers',
-    price: '₹1,650',
-    priceVal: 1650,
-    img: '/piece_palazzo_card.jpg'
+    name: 'Zari Embroidered Kurta',
+    price: '₹2,499',
+    priceVal: 2499,
+    img: '/kurta_9033.png'
   },
   {
-    name: 'Zari Border Heavy Dupatta',
-    price: '₹1,200',
-    priceVal: 1200,
-    img: '/piece_dupatta_card.jpg'
+    name: 'Flared Palazzo Pants',
+    price: '₹1,450',
+    priceVal: 1450,
+    img: '/palazzo_9033.png'
   },
   {
-    name: 'Handcrafted Festive Kurti',
-    price: '₹2,199',
-    priceVal: 2199,
-    img: '/piece_kurta_card.jpg'
+    name: 'Embellished Organza Dupatta',
+    price: '₹980',
+    priceVal: 980,
+    img: '/dupatta_9033.png'
   },
   {
-    name: 'Chanderi Wide Leg Pants',
-    price: '₹1,399',
-    priceVal: 1399,
-    img: '/piece_palazzo_card.jpg'
+    name: 'Gul-e-Noor 3-Piece Festive Set',
+    price: '₹4,929',
+    priceVal: 4929,
+    img: '/model_9033.png'
   },
   {
-    name: 'Gold Tilla Work Dupatta',
-    price: '₹1,050',
-    priceVal: 1050,
-    img: '/piece_dupatta_card.jpg'
+    name: 'Zari Embroidered Kurta',
+    price: '₹2,499',
+    priceVal: 2499,
+    img: '/kurta_9033.png'
   },
   {
-    name: 'Bridal Reception Kurta',
-    price: '₹2,899',
-    priceVal: 2899,
-    img: '/piece_kurta_card.jpg'
+    name: 'Flared Palazzo Pants',
+    price: '₹1,450',
+    priceVal: 1450,
+    img: '/palazzo_9033.png'
   },
   {
-    name: 'Festive Silk Palazzo',
-    price: '₹1,550',
-    priceVal: 1550,
-    img: '/piece_palazzo_card.jpg'
+    name: 'Embellished Organza Dupatta',
+    price: '₹980',
+    priceVal: 980,
+    img: '/dupatta_9033.png'
   },
   {
-    name: 'Scalloped Chiffon Dupatta',
-    price: '₹890',
-    priceVal: 890,
-    img: '/piece_dupatta_card.jpg'
+    name: 'Gul-e-Noor 3-Piece Festive Set',
+    price: '₹4,929',
+    priceVal: 4929,
+    img: '/model_9033.png'
   }
 ];
 
@@ -90,7 +90,7 @@ const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
 const N = 6;
 const FIRST = 15;
-const MODEL_ASPECT_RATIO = 720 / 1280; // 0.5625
+const MODEL_ASPECT_RATIO = 1136 / 2000; // 0.568
 
 const wrap = (x, n) => ((x % n) + n) % n;
 const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
