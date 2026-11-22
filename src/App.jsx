@@ -43,10 +43,10 @@ const MODELS = [
   },
   {
     look: 20,
-    name: 'Lalarukh Royal Festive Edition',
-    code: 'ZC-NO',
-    img: '/model_no.png',
-    r: 1280 / 1920
+    name: 'Nazneen Champagne Rose Suit',
+    code: 'ZC-3763',
+    img: '/model_3763.png',
+    r: 1280 / 1920 // 0.6667
   }
 ];
 
@@ -192,31 +192,31 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 20 (Dummy 6: ZC-NO Terracotta Rose Festive Set)
+  // LOOK 20 (Dummy 6: ZC-3763 Champagne Rose Festive Set)
   // =========================================
   {
-    name: 'Embroidered Rose Kurti',
-    category: 'ZC-NO',
+    name: 'Embroidered Champagne Kurti',
+    category: 'ZC-3763',
     look: 20,
-    price: '₹2,799',
-    priceVal: 2799,
-    img: '/kurta_no.png'
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_3763.png'
   },
   {
-    name: 'Flared Terracotta Palazzo',
-    category: 'ZC-NO',
+    name: 'Flared Almond Palazzo Pants',
+    category: 'ZC-3763',
     look: 20,
-    price: '₹1,599',
-    priceVal: 1599,
-    img: '/palazzo_no.png'
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_3763.png'
   },
   {
-    name: 'Embellished Rose Dupatta',
-    category: 'ZC-NO',
+    name: 'Scalloped Champagne Dupatta',
+    category: 'ZC-3763',
     look: 20,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_no_card.png'
+    img: '/dupatta_3763_card.png'
   }
 ];
 
@@ -687,6 +687,7 @@ export default function App() {
       '/model_1435.png',
       '/model_9018.png',
       '/model_no.png',
+      '/model_3763.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -701,7 +702,10 @@ export default function App() {
       '/dupatta_9018_card.png',
       '/kurta_no.png',
       '/palazzo_no.png',
-      '/dupatta_no_card.png'
+      '/dupatta_no_card.png',
+      '/kurta_3763.png',
+      '/palazzo_3763.png',
+      '/dupatta_3763_card.png'
     ];
 
     Promise.all(
