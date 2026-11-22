@@ -7,77 +7,77 @@ import confetti from 'canvas-confetti';
 
 const MODELS = [
   {
-    look: 15,
+    look: 1,
     name: 'Gul-e-Noor Zari Suit',
     code: 'ZC-9033',
     img: '/model_9033.png',
     r: 1136 / 2000 // 0.568
   },
   {
-    look: 16,
+    look: 2,
     name: 'Nazakat Peplum & Sharara',
     code: 'ZC-2601',
     img: '/model_2601.png',
     r: 1216 / 1968 // 0.6179
   },
   {
-    look: 17,
+    look: 3,
     name: 'Shehr-e-Khaas Mink Ensemble',
     code: 'ZC-1435',
     img: '/model_1435.png',
     r: 1152 / 2176 // 0.5294
   },
   {
-    look: 18,
+    look: 4,
     name: 'Afreen Peach Gold Anarkali',
     code: 'ZC-9018',
     img: '/model_9018.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 19,
+    look: 5,
     name: 'Gul-e-Lalarukh Terracotta Suit',
     code: 'ZC-NO',
     img: '/model_no.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 20,
+    look: 6,
     name: 'Nazneen Champagne Rose Suit',
     code: 'ZC-3763',
     img: '/model_3763.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 21,
+    look: 7,
     name: 'Rukhsaar Cinnamon Rust Ensemble',
     code: 'ZC-4022',
     img: '/model_4022.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 22,
+    look: 8,
     name: 'Mehtab Dusty Rose Festive Suit',
     code: 'ZC-4029',
     img: '/model_4029.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 23,
+    look: 9,
     name: 'Aaira Smoky Mauve Handcrafted Suit',
     code: 'ZC-3802',
     img: '/model_3802.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 24,
+    look: 10,
     name: 'Noor-e-Zeba Olive Gold Set',
     code: 'ZC-3762',
     img: '/model_3762.png',
     r: 1280 / 1920 // 0.6667
   },
   {
-    look: 25,
+    look: 11,
     name: 'Afnan Charcoal Slate Ensemble',
     code: 'ZC-3803',
     img: '/model_3803.png',
@@ -87,12 +87,12 @@ const MODELS = [
 
 const ITEMS = [
   // =========================================
-  // LOOK 15 (Dummy 1: ZC-9033 Mustard Handcrafted Set)
+  // LOOK 1 (Dummy 1: ZC-9033 Mustard Handcrafted Set)
   // =========================================
   {
     name: 'Zari Embroidered Kurta',
     category: 'ZC-9033',
-    look: 15,
+    look: 1,
     price: '₹2,499',
     priceVal: 2499,
     img: '/kurta_9033.png'
@@ -100,7 +100,7 @@ const ITEMS = [
   {
     name: 'Flared Palazzo Pants',
     category: 'ZC-9033',
-    look: 15,
+    look: 1,
     price: '₹1,450',
     priceVal: 1450,
     img: '/palazzo_9033.png'
@@ -108,19 +108,19 @@ const ITEMS = [
   {
     name: 'Embellished Organza Dupatta',
     category: 'ZC-9033',
-    look: 15,
+    look: 1,
     price: '₹980',
     priceVal: 980,
     img: '/dupatta_9033.png'
   },
 
   // =========================================
-  // LOOK 16 (Dummy 2: ZC-2601 Sage Green Peplum & Sharara Set)
+  // LOOK 2 (Dummy 2: ZC-2601 Sage Green Peplum & Sharara Set)
   // =========================================
   {
     name: 'Embroidered Peplum Kurti',
     category: 'ZC-2601',
-    look: 16,
+    look: 2,
     price: '₹2,799',
     priceVal: 2799,
     img: '/peplum_2601.png'
@@ -128,7 +128,7 @@ const ITEMS = [
   {
     name: 'Flared Sharara Palazzo',
     category: 'ZC-2601',
-    look: 16,
+    look: 2,
     price: '₹1,650',
     priceVal: 1650,
     img: '/palazzo_2601.png'
@@ -136,19 +136,19 @@ const ITEMS = [
   {
     name: 'Scalloped Organza Dupatta',
     category: 'ZC-2601',
-    look: 16,
+    look: 2,
     price: '₹1,050',
     priceVal: 1050,
     img: '/dupatta_2601_card.png'
   },
 
   // =========================================
-  // LOOK 17 (Dummy 3: ZC-1435 Mink / Silver Grey Handcrafted Set)
+  // LOOK 3 (Dummy 3: ZC-1435 Mink / Silver Grey Handcrafted Set)
   // =========================================
   {
     name: 'Handcrafted Zari Kurta',
     category: 'ZC-1435',
-    look: 17,
+    look: 3,
     price: '₹2,899',
     priceVal: 2899,
     img: '/kurta_1435.png'
@@ -156,7 +156,7 @@ const ITEMS = [
   {
     name: 'Tailored Silk Palazzo',
     category: 'ZC-1435',
-    look: 17,
+    look: 3,
     price: '₹1,550',
     priceVal: 1550,
     img: '/palazzo_1435.png'
@@ -164,19 +164,19 @@ const ITEMS = [
   {
     name: 'Embroidered Mink Dupatta',
     category: 'ZC-1435',
-    look: 17,
+    look: 3,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_1435_card.png'
   },
 
   // =========================================
-  // LOOK 18 (Dummy 4: ZC-9018 Peach Gold Anarkali Set)
+  // LOOK 4 (Dummy 4: ZC-9018 Peach Gold Anarkali Set)
   // =========================================
   {
     name: 'Embroidered Flared Kurti',
     category: 'ZC-9018',
-    look: 18,
+    look: 4,
     price: '₹2,999',
     priceVal: 2999,
     img: '/kurta_9018.png'
@@ -184,7 +184,7 @@ const ITEMS = [
   {
     name: 'Flared Silk Palazzo Pants',
     category: 'ZC-9018',
-    look: 18,
+    look: 4,
     price: '₹1,599',
     priceVal: 1599,
     img: '/palazzo_9018.png'
@@ -192,19 +192,19 @@ const ITEMS = [
   {
     name: 'Scalloped Peach Dupatta',
     category: 'ZC-9018',
-    look: 18,
+    look: 4,
     price: '₹1,199',
     priceVal: 1199,
     img: '/dupatta_9018_card.png'
   },
 
   // =========================================
-  // LOOK 19 (Dummy 5: ZC-NO Terracotta Rose Festive Set)
+  // LOOK 5 (Dummy 5: ZC-NO Terracotta Rose Festive Set)
   // =========================================
   {
     name: 'Embroidered Rose Kurti',
     category: 'ZC-NO',
-    look: 19,
+    look: 5,
     price: '₹2,799',
     priceVal: 2799,
     img: '/kurta_no.png'
@@ -212,7 +212,7 @@ const ITEMS = [
   {
     name: 'Flared Terracotta Palazzo',
     category: 'ZC-NO',
-    look: 19,
+    look: 5,
     price: '₹1,599',
     priceVal: 1599,
     img: '/palazzo_no.png'
@@ -220,19 +220,19 @@ const ITEMS = [
   {
     name: 'Embellished Rose Dupatta',
     category: 'ZC-NO',
-    look: 19,
+    look: 5,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_no_card.png'
   },
 
   // =========================================
-  // LOOK 20 (Dummy 6: ZC-3763 Champagne Rose Festive Set)
+  // LOOK 6 (Dummy 6: ZC-3763 Champagne Rose Festive Set)
   // =========================================
   {
     name: 'Embroidered Champagne Kurti',
     category: 'ZC-3763',
-    look: 20,
+    look: 6,
     price: '₹2,899',
     priceVal: 2899,
     img: '/kurta_3763.png'
@@ -240,7 +240,7 @@ const ITEMS = [
   {
     name: 'Flared Almond Palazzo Pants',
     category: 'ZC-3763',
-    look: 20,
+    look: 6,
     price: '₹1,550',
     priceVal: 1550,
     img: '/palazzo_3763.png'
@@ -248,19 +248,19 @@ const ITEMS = [
   {
     name: 'Scalloped Champagne Dupatta',
     category: 'ZC-3763',
-    look: 20,
+    look: 6,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_3763_card.png'
   },
 
   // =========================================
-  // LOOK 21 (Dummy 7: ZC-4022 Cinnamon Rust Festive Set)
+  // LOOK 7 (Dummy 7: ZC-4022 Cinnamon Rust Festive Set)
   // =========================================
   {
     name: 'Handcrafted Cinnamon Kurti',
     category: 'ZC-4022',
-    look: 21,
+    look: 7,
     price: '₹2,999',
     priceVal: 2999,
     img: '/kurta_4022.png'
@@ -268,7 +268,7 @@ const ITEMS = [
   {
     name: 'Straight Silk Pants',
     category: 'ZC-4022',
-    look: 21,
+    look: 7,
     price: '₹1,499',
     priceVal: 1499,
     img: '/palazzo_4022.png'
@@ -276,19 +276,19 @@ const ITEMS = [
   {
     name: 'Organza Cinnamon Dupatta',
     category: 'ZC-4022',
-    look: 21,
+    look: 7,
     price: '₹1,199',
     priceVal: 1199,
     img: '/dupatta_4022_card.png'
   },
 
   // =========================================
-  // LOOK 22 (Dummy 8: ZC-4029 Dusty Rose Festive Set)
+  // LOOK 8 (Dummy 8: ZC-4029 Dusty Rose Festive Set)
   // =========================================
   {
     name: 'Embroidered Dusty Rose Kurti',
     category: 'ZC-4029',
-    look: 22,
+    look: 8,
     price: '₹2,899',
     priceVal: 2899,
     img: '/kurta_4029.png'
@@ -296,7 +296,7 @@ const ITEMS = [
   {
     name: 'Flared Soft Mauve Palazzo',
     category: 'ZC-4029',
-    look: 22,
+    look: 8,
     price: '₹1,550',
     priceVal: 1550,
     img: '/palazzo_4029.png'
@@ -304,19 +304,19 @@ const ITEMS = [
   {
     name: 'Organza Pastel Rose Dupatta',
     category: 'ZC-4029',
-    look: 22,
+    look: 8,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_4029_card.png'
   },
 
   // =========================================
-  // LOOK 23 (Dummy 9: ZC-3802 Smoky Mauve Festive Set)
+  // LOOK 9 (Dummy 9: ZC-3802 Smoky Mauve Festive Set)
   // =========================================
   {
     name: 'Embroidered Smoky Mauve Kurti',
     category: 'ZC-3802',
-    look: 23,
+    look: 9,
     price: '₹2,950',
     priceVal: 2950,
     img: '/kurta_3802.png'
@@ -324,7 +324,7 @@ const ITEMS = [
   {
     name: 'Flared Ash Rose Silk Palazzo',
     category: 'ZC-3802',
-    look: 23,
+    look: 9,
     price: '₹1,550',
     priceVal: 1550,
     img: '/palazzo_3802.png'
@@ -332,19 +332,19 @@ const ITEMS = [
   {
     name: 'Organza Zari Border Dupatta',
     category: 'ZC-3802',
-    look: 23,
+    look: 9,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_3802_card.png'
   },
 
   // =========================================
-  // LOOK 24 (Dummy 10: ZC-3762 Olive Gold Festive Set)
+  // LOOK 10 (Dummy 10: ZC-3762 Olive Gold Festive Set)
   // =========================================
   {
     name: 'Handcrafted Olive Gold Kurti',
     category: 'ZC-3762',
-    look: 24,
+    look: 10,
     price: '₹2,950',
     priceVal: 2950,
     img: '/kurta_3762.png'
@@ -352,7 +352,7 @@ const ITEMS = [
   {
     name: 'Flared Sage Chanderi Palazzo',
     category: 'ZC-3762',
-    look: 24,
+    look: 10,
     price: '₹1,599',
     priceVal: 1599,
     img: '/palazzo_3762.png'
@@ -360,19 +360,19 @@ const ITEMS = [
   {
     name: 'Organza Zari Border Dupatta',
     category: 'ZC-3762',
-    look: 24,
+    look: 10,
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_3762_card.png'
   },
 
   // =========================================
-  // LOOK 25 (Dummy 11: ZC-3803 Charcoal Slate Ensemble)
+  // LOOK 11 (Dummy 11: ZC-3803 Charcoal Slate Ensemble)
   // =========================================
   {
     name: 'Embroidered Slate Grey Kurti',
     category: 'ZC-3803',
-    look: 25,
+    look: 11,
     price: '₹2,899',
     priceVal: 2899,
     img: '/kurta_3803.png'
@@ -380,7 +380,7 @@ const ITEMS = [
   {
     name: 'Flared Silver Ash Palazzo',
     category: 'ZC-3803',
-    look: 25,
+    look: 11,
     price: '₹1,550',
     priceVal: 1550,
     img: '/palazzo_3803.png'
@@ -388,7 +388,7 @@ const ITEMS = [
   {
     name: 'Organza Slate Scallop Dupatta',
     category: 'ZC-3803',
-    look: 25,
+    look: 11,
     price: '₹1,199',
     priceVal: 1199,
     img: '/dupatta_3803_card.png'
@@ -402,7 +402,7 @@ const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
 const N = 11;
-const FIRST = 15;
+const FIRST = 1;
 
 const wrap = (x, n) => ((x % n) + n) % n;
 const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
