@@ -2,46 +2,84 @@ import React, { useEffect, useRef, useState } from 'react';
 import confetti from 'canvas-confetti';
 
 /* =========================================
-   1. IMAGE SOURCES & CONSTANTS
+   1. IMAGE SOURCES & ASSETS
 ========================================= */
 
-const MODELS =
-  'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261102_042056_1a704ff7-b0e5-4a9f-bbda-62392b819fb6.png&w=3840&q=85';
-
-const PIECES =
-  'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261102_042057_080e85b0-b4aa-4072-8eb9-2304c7baf42b.png&w=2400&q=85';
-
-const LOOKS = [
-  [12, 176],
-  [178, 330],
-  [331, 470],
-  [476, 633],
-  [634, 767],
-  [767, 956]
-];
-
-const Y0 = 48;
-const Y1 = 496;
-const FIRST = 15;
+const MODEL_SRC = '/model_transparent.png';
 
 const ITEMS = [
-  [26, 224, 28, 214, 'Feather Jacket', '$2,900', 2900],
-  [304, 412, 22, 236, 'Satin Wide Leg Trousers', '$1,450', 1450],
-
-  [530, 666, 12, 242, 'Pleated Dress', '$2,200', 2200],
-  [752, 922, 100, 146, 'Gold Waist Belt', '$420', 420],
-
-  [70, 176, 246, 466, 'Satin Trench Dress', '$2,350', 2350],
-  [294, 422, 294, 432, 'Top Handle Bag', '$980', 980],
-
-  [508, 688, 240, 452, 'Billow Sleeve Blouse', '$860', 860],
-  [780, 890, 252, 466, 'Tie Waist Trousers', '$740', 740],
-
-  [64, 178, 484, 698, 'Powder Long Coat', '$1,980', 1980],
-  [316, 396, 482, 698, 'Ivory Straight Trousers', '$690', 690],
-
-  [530, 672, 508, 682, 'Sculpted Ruffle Top', '$1,120', 1120],
-  [754, 916, 484, 700, 'Pleated Maxi Skirt', '$1,340', 1340]
+  {
+    name: 'Zari Embroidered Kurta',
+    price: '₹2,499',
+    priceVal: 2499,
+    img: '/piece_kurta_card.jpg'
+  },
+  {
+    name: 'Flared Palazzo Pants',
+    price: '₹1,450',
+    priceVal: 1450,
+    img: '/piece_palazzo_card.jpg'
+  },
+  {
+    name: 'Embellished Organza Dupatta',
+    price: '₹980',
+    priceVal: 980,
+    img: '/piece_dupatta_card.jpg'
+  },
+  {
+    name: 'Gul-e-Noor 3-Piece Festive Set',
+    price: '₹4,929',
+    priceVal: 4929,
+    img: '/piece_kurta_card.jpg'
+  },
+  {
+    name: 'Mustard Silk Palazzo Trousers',
+    price: '₹1,650',
+    priceVal: 1650,
+    img: '/piece_palazzo_card.jpg'
+  },
+  {
+    name: 'Zari Border Heavy Dupatta',
+    price: '₹1,200',
+    priceVal: 1200,
+    img: '/piece_dupatta_card.jpg'
+  },
+  {
+    name: 'Handcrafted Festive Kurti',
+    price: '₹2,199',
+    priceVal: 2199,
+    img: '/piece_kurta_card.jpg'
+  },
+  {
+    name: 'Chanderi Wide Leg Pants',
+    price: '₹1,399',
+    priceVal: 1399,
+    img: '/piece_palazzo_card.jpg'
+  },
+  {
+    name: 'Gold Tilla Work Dupatta',
+    price: '₹1,050',
+    priceVal: 1050,
+    img: '/piece_dupatta_card.jpg'
+  },
+  {
+    name: 'Bridal Reception Kurta',
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/piece_kurta_card.jpg'
+  },
+  {
+    name: 'Festive Silk Palazzo',
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/piece_palazzo_card.jpg'
+  },
+  {
+    name: 'Scalloped Chiffon Dupatta',
+    price: '₹890',
+    priceVal: 890,
+    img: '/piece_dupatta_card.jpg'
+  }
 ];
 
 const KX = [1.2, 0.744, 0.496, 0.346, 0.235, 0.15, 0.085];
@@ -50,8 +88,9 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = LOOKS.length;
-const NS = 'http://www.w3.org/2000/svg';
+const N = 6;
+const FIRST = 15;
+const MODEL_ASPECT_RATIO = 720 / 1280; // 0.5625
 
 const wrap = (x, n) => ((x % n) + n) % n;
 const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
@@ -65,34 +104,6 @@ const STORE_INFO = {
   timings: 'Monday to Sunday : 11:00 AM – 9:30 PM',
   mapUrl: 'https://maps.google.com/?q=Rajwada+Indore'
 };
-
-/* SVG sprite cropping helper */
-function createCropSvg(href, x0, y0, w, h, sheetW, sheetH) {
-  const s = document.createElementNS(NS, 'svg');
-  s.setAttribute('viewBox', `${x0} ${y0} ${w} ${h}`);
-  s.setAttribute('aria-hidden', 'true');
-
-  const f = document.createElementNS(NS, 'svg');
-  [
-    ['x', x0],
-    ['y', y0],
-    ['width', w],
-    ['height', h],
-    ['viewBox', `${x0} ${y0} ${w} ${h}`]
-  ].forEach(([k, v]) => {
-    f.setAttribute(k, v);
-  });
-
-  const i = document.createElementNS(NS, 'image');
-  i.setAttribute('href', href);
-  i.setAttribute('width', sheetW);
-  i.setAttribute('height', sheetH);
-
-  f.append(i);
-  s.append(f);
-
-  return s;
-}
 
 export default function App() {
   const stageRef = useRef(null);
@@ -122,9 +133,9 @@ export default function App() {
   const [wishlist, setWishlist] = useState(() => {
     try {
       const s = localStorage.getItem('zc_wishlist_items');
-      return s ? JSON.parse(s) : [2, 4];
+      return s ? JSON.parse(s) : [0, 1];
     } catch {
-      return [2, 4];
+      return [0, 1];
     }
   });
 
@@ -147,7 +158,7 @@ export default function App() {
           it.index === index ? { ...it, qty: it.qty + 1 } : it
         );
       }
-      return [...prev, { index, name: item[4], price: item[5], priceVal: item[6], qty: 1 }];
+      return [...prev, { index, name: item.name, price: item.price, priceVal: item.priceVal, qty: 1, img: item.img }];
     });
 
     confetti({
@@ -181,7 +192,7 @@ export default function App() {
       .map((it, i) => `${i + 1}. *${it.name}* (${it.price}) x ${it.qty}`)
       .join('\n');
     const total = cart.reduce((sum, it) => sum + it.priceVal * it.qty, 0);
-    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Pieces:*\n${itemsList}\n\n*Total Amount:* $${total.toLocaleString()}\n*Store:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
+    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Pieces:*\n${itemsList}\n\n*Total Amount:* ₹${total.toLocaleString('en-IN')}\n*Store Location:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
     window.open(`https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
@@ -200,24 +211,35 @@ export default function App() {
     rail.innerHTML = '';
     roll.innerHTML = '';
 
-    // Create Runway Models
-    const people = LOOKS.map(([a, b], i) => {
+    // Create Runway Models using user's photo from 11.jpg
+    const people = Array.from({ length: N }, (_, i) => {
       const e = document.createElement('div');
       e.className = 'm';
       e.dataset.i = i;
-      e.append(createCropSvg(MODELS, a, Y0, b - a, Y1 - Y0, 960, 540));
+
+      const img = document.createElement('img');
+      img.src = MODEL_SRC;
+      img.alt = `Zainab Collection Look ${FIRST + i}`;
+      img.draggable = false;
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.objectFit = 'contain';
+      img.style.objectPosition = 'bottom center';
+      img.style.pointerEvents = 'none';
+
+      e.append(img);
       line.append(e);
 
       return {
         e,
-        r: (b - a) / (Y1 - Y0),
+        r: MODEL_ASPECT_RATIO,
         f: '',
         o: ''
       };
     });
 
-    // Create Product Cards in Rail
-    const cardElements = ITEMS.map(([a, b, c, d, name, price], i) => {
+    // Create Product Cards in Rail (Cropped clothes from 11.jpg)
+    const cardElements = ITEMS.map((item, i) => {
       const e = document.createElement('article');
       e.className = 'card' + (i % 2 ? ' alt' : '');
       e.dataset.index = i;
@@ -228,7 +250,7 @@ export default function App() {
         <button
           class="fav ${isFav ? 'active' : ''}"
           aria-pressed="${isFav}"
-          aria-label="Save ${name}"
+          aria-label="Save ${item.name}"
           data-fav-index="${i}"
         >
           <svg viewBox="0 0 24 24">
@@ -236,22 +258,20 @@ export default function App() {
           </svg>
         </button>
 
-        <span class="shot"></span>
+        <span class="shot">
+          <img src="${item.img}" alt="${item.name}" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;" />
+        </span>
 
         <div class="meta">
-          <h3 class="wide">${name}</h3>
-          <span>${price}</span>
+          <h3 class="wide">${item.name}</h3>
+          <span>${item.price}</span>
           <button
             class="add"
-            aria-label="Add ${name} to cart"
+            aria-label="Add ${item.name} to cart"
             data-add-index="${i}"
           ></button>
         </div>
       `;
-
-      e.querySelector('.shot').append(
-        createCropSvg(PIECES, a, c, b - a, d - c, 960, 720)
-      );
 
       rail.append(e);
       return e;
@@ -510,13 +530,10 @@ export default function App() {
     }
 
     // Preload & Init
-    Promise.all(
-      [MODELS, PIECES].map((u) => {
-        const i = new Image();
-        i.src = u;
-        return i.decode().catch(() => {});
-      })
-    )
+    const imgToPreload = new Image();
+    imgToPreload.src = MODEL_SRC;
+    imgToPreload.decode()
+      .catch(() => {})
       .then(() => document.fonts.ready)
       .then(() => {
         size();
@@ -588,7 +605,7 @@ export default function App() {
               aria-label="Saved Looks"
             >
               <svg viewBox="0 0 24 24">
-                <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.6 4.6 0 0 1 20.500 9C20.500 15 12 20 12 20Z" />
+                <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.600 4.600 0 0 1 20.500 9C20.500 15 12 20 12 20Z" />
               </svg>
             </button>
 
@@ -647,11 +664,10 @@ export default function App() {
 
           {/* Intro Text */}
           <div className="intro">
-            <h2 className="wide">Spring Summer 2027</h2>
+            <h2 className="wide">Festive Collection 2027</h2>
             <p>
-              A study in softness and strength. The new season collection from
-              Zainab Collection blends delicate textures and modern silhouettes,
-              crafted for a more beautiful tomorrow.
+              A celebration of royal grace and modern silhouettes. Handcrafted zari embroidery,
+              pure Chanderi silks, and tailored festive ensembles from Zainab Collection, Rajwada.
             </p>
             <button
               type="button"
@@ -741,32 +757,39 @@ export default function App() {
                         borderBottom: '1px solid var(--line)'
                       }}
                     >
-                      <div>
-                        <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.14em', marginBottom: '4px' }}>
-                          {item.name}
-                        </h4>
-                        <span style={{ fontSize: '13px', color: 'var(--mid)' }}>{item.price}</span>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px' }}>
-                          <button
-                            type="button"
-                            onClick={() => updateCartQty(item.index, -1)}
-                            style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
-                          >
-                            -
-                          </button>
-                          <span style={{ fontSize: '12px', fontWeight: '500' }}>{item.qty}</span>
-                          <button
-                            type="button"
-                            onClick={() => updateCartQty(item.index, 1)}
-                            style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
-                          >
-                            +
-                          </button>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+                        <img
+                          src={item.img}
+                          alt={item.name}
+                          style={{ width: '50px', height: '65px', objectFit: 'contain', background: '#f8fafc', borderRadius: '6px' }}
+                        />
+                        <div>
+                          <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.14em', marginBottom: '4px' }}>
+                            {item.name}
+                          </h4>
+                          <span style={{ fontSize: '13px', color: 'var(--mid)' }}>{item.price}</span>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px' }}>
+                            <button
+                              type="button"
+                              onClick={() => updateCartQty(item.index, -1)}
+                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
+                            >
+                              -
+                            </button>
+                            <span style={{ fontSize: '12px', fontWeight: '500' }}>{item.qty}</span>
+                            <button
+                              type="button"
+                              onClick={() => updateCartQty(item.index, 1)}
+                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
+                            >
+                              +
+                            </button>
+                          </div>
                         </div>
                       </div>
                       <div style={{ textAlign: 'right' }}>
                         <span className="wide" style={{ fontSize: '12px', fontWeight: 'bold' }}>
-                          ${(item.priceVal * item.qty).toLocaleString()}
+                          ₹{(item.priceVal * item.qty).toLocaleString('en-IN')}
                         </span>
                         <button
                           type="button"
@@ -787,7 +810,7 @@ export default function App() {
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px' }}>
                   <span className="wide" style={{ fontSize: '11px', letterSpacing: '0.15em' }}>Total Amount</span>
                   <span className="wide" style={{ fontSize: '14px', fontWeight: 'bold' }}>
-                    ${cart.reduce((sum, it) => sum + it.priceVal * it.qty, 0).toLocaleString()}
+                    ₹{cart.reduce((sum, it) => sum + it.priceVal * it.qty, 0).toLocaleString('en-IN')}
                   </span>
                 </div>
 
@@ -809,7 +832,8 @@ export default function App() {
                     justifyContent: 'center',
                     gap: '8px',
                     boxShadow: '0 4px 14px rgba(37,211,102,0.35)',
-                    marginBottom: '10px'
+                    marginBottom: '10px',
+                    cursor: 'pointer'
                   }}
                 >
                   Order via WhatsApp
@@ -858,9 +882,12 @@ export default function App() {
                           borderRadius: '8px'
                         }}
                       >
-                        <div>
-                          <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it[4]}</h4>
-                          <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it[5]}</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                          <img src={it.img} alt={it.name} style={{ width: '40px', height: '50px', objectFit: 'contain' }} />
+                          <div>
+                            <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it.name}</h4>
+                            <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it.price}</span>
+                          </div>
                         </div>
                         <div style={{ display: 'flex', gap: '10px' }}>
                           <button
@@ -876,7 +903,8 @@ export default function App() {
                               background: 'var(--ink)',
                               color: '#fff',
                               padding: '6px 12px',
-                              borderRadius: '4px'
+                              borderRadius: '4px',
+                              cursor: 'pointer'
                             }}
                           >
                             Add to Cart
@@ -884,7 +912,7 @@ export default function App() {
                           <button
                             type="button"
                             onClick={() => toggleWishlist(idx)}
-                            style={{ color: '#b98179', fontSize: '12px' }}
+                            style={{ color: '#b98179', fontSize: '12px', cursor: 'pointer' }}
                           >
                             ✕
                           </button>
@@ -1012,7 +1040,7 @@ export default function App() {
             </div>
 
             <div style={{ padding: '16px 20px', maxHeight: '300px', overflowY: 'auto' }}>
-              {ITEMS.filter((it) => it[4].toLowerCase().includes(searchQuery.toLowerCase())).map((it, idx) => (
+              {ITEMS.filter((it) => it.name.toLowerCase().includes(searchQuery.toLowerCase())).map((it, idx) => (
                 <div
                   key={idx}
                   onClick={() => {
@@ -1022,14 +1050,18 @@ export default function App() {
                   }}
                   style={{
                     display: 'flex',
+                    alignItems: 'center',
                     justifyContent: 'space-between',
                     padding: '10px 0',
                     borderBottom: '1px solid var(--line)',
                     cursor: 'pointer'
                   }}
                 >
-                  <span className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it[4]}</span>
-                  <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it[5]}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                    <img src={it.img} alt={it.name} style={{ width: '35px', height: '45px', objectFit: 'contain' }} />
+                    <span className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it.name}</span>
+                  </div>
+                  <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it.price}</span>
                 </div>
               ))}
             </div>
