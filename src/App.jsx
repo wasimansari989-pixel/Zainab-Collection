@@ -54,6 +54,13 @@ const MODELS = [
     code: 'ZC-4022',
     img: '/model_4022.png',
     r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 22,
+    name: 'Mehtab Dusty Rose Festive Suit',
+    code: 'ZC-4029',
+    img: '/model_4029.png',
+    r: 1280 / 1920 // 0.6667
   }
 ];
 
@@ -252,6 +259,34 @@ const ITEMS = [
     price: '₹1,199',
     priceVal: 1199,
     img: '/dupatta_4022_card.png'
+  },
+
+  // =========================================
+  // LOOK 22 (Dummy 8: ZC-4029 Dusty Rose Festive Set)
+  // =========================================
+  {
+    name: 'Embroidered Dusty Rose Kurti',
+    category: 'ZC-4029',
+    look: 22,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_4029.png'
+  },
+  {
+    name: 'Flared Soft Mauve Palazzo',
+    category: 'ZC-4029',
+    look: 22,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_4029.png'
+  },
+  {
+    name: 'Organza Pastel Rose Dupatta',
+    category: 'ZC-4029',
+    look: 22,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_4029_card.png'
   }
 ];
 
@@ -261,7 +296,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 7;
+const N = 8;
 const FIRST = 15;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -724,6 +759,7 @@ export default function App() {
       '/model_no.png',
       '/model_3763.png',
       '/model_4022.png',
+      '/model_4029.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -744,7 +780,10 @@ export default function App() {
       '/dupatta_3763_card.png',
       '/kurta_4022.png',
       '/palazzo_4022.png',
-      '/dupatta_4022_card.png'
+      '/dupatta_4022_card.png',
+      '/kurta_4029.png',
+      '/palazzo_4029.png',
+      '/dupatta_4029_card.png'
     ];
 
     Promise.all(
