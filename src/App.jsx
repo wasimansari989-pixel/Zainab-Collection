@@ -2,83 +2,149 @@ import React, { useEffect, useRef, useState } from 'react';
 import confetti from 'canvas-confetti';
 
 /* =========================================
-   1. IMAGE SOURCES & ASSETS
+   1. IMAGE SOURCES & RUNWAY MODELS
 ========================================= */
 
-const MODEL_SRC = '/model_9033.png';
+const MODELS = [
+  {
+    look: 15,
+    name: 'Gul-e-Noor Zari Suit',
+    code: 'ZC-9033',
+    img: '/model_9033.png',
+    r: 1136 / 2000 // 0.568
+  },
+  {
+    look: 16,
+    name: 'Nazakat Peplum & Sharara',
+    code: 'ZC-2601',
+    img: '/model_2601.png',
+    r: 1216 / 1968 // 0.6179
+  },
+  {
+    look: 17,
+    name: 'Gul-e-Noor Velvet Classic',
+    code: 'ZC-9033',
+    img: '/model_9033.png',
+    r: 1136 / 2000
+  },
+  {
+    look: 18,
+    name: 'Nazakat Sage Couture',
+    code: 'ZC-2601',
+    img: '/model_2601.png',
+    r: 1216 / 1968
+  },
+  {
+    look: 19,
+    name: 'Royal Heritage Zari Set',
+    code: 'ZC-9033',
+    img: '/model_9033.png',
+    r: 1136 / 2000
+  },
+  {
+    look: 20,
+    name: 'Emerald & Sage Luxe Edition',
+    code: 'ZC-2601',
+    img: '/model_2601.png',
+    r: 1216 / 1968
+  }
+];
 
 const ITEMS = [
+  // LOOK 15 (Model 1 - 9033 Mustard Handcrafted)
   {
     name: 'Zari Embroidered Kurta',
+    category: 'ZC-9033',
     price: '₹2,499',
     priceVal: 2499,
     img: '/kurta_9033.png'
   },
   {
     name: 'Flared Palazzo Pants',
+    category: 'ZC-9033',
     price: '₹1,450',
     priceVal: 1450,
     img: '/palazzo_9033.png'
   },
+
+  // LOOK 16 (Model 2 - 2601 Sage Green Peplum & Sharara)
+  {
+    name: 'Embroidered Peplum Kurti',
+    category: 'ZC-2601',
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/peplum_2601.png'
+  },
+  {
+    name: 'Flared Sharara Palazzo',
+    category: 'ZC-2601',
+    price: '₹1,650',
+    priceVal: 1650,
+    img: '/palazzo_2601.png'
+  },
+
+  // LOOK 17 (Model 3 - 9033 Dupatta & 3-Piece Set)
   {
     name: 'Embellished Organza Dupatta',
+    category: 'ZC-9033',
     price: '₹980',
     priceVal: 980,
     img: '/dupatta_9033.png'
   },
   {
     name: 'Gul-e-Noor 3-Piece Festive Set',
+    category: 'ZC-9033',
     price: '₹4,929',
     priceVal: 4929,
     img: '/model_9033.png'
   },
+
+  // LOOK 18 (Model 4 - 2601 Scallop Dupatta & 3-Piece Ensemble)
   {
-    name: 'Zari Embroidered Kurta',
+    name: 'Scalloped Organza Dupatta',
+    category: 'ZC-2601',
+    price: '₹1,050',
+    priceVal: 1050,
+    img: '/dupatta_2601_card.png'
+  },
+  {
+    name: 'Nazakat 3-Piece Designer Ensemble',
+    category: 'ZC-2601',
+    price: '₹5,499',
+    priceVal: 5499,
+    img: '/model_2601.png'
+  },
+
+  // LOOK 19 (Model 5 - 9033 Royal Zari Kurta & Palazzo)
+  {
+    name: 'Handcrafted Zari Kurta',
+    category: 'ZC-9033',
     price: '₹2,499',
     priceVal: 2499,
     img: '/kurta_9033.png'
   },
   {
-    name: 'Flared Palazzo Pants',
+    name: 'Flared Chanderi Palazzo',
+    category: 'ZC-9033',
     price: '₹1,450',
     priceVal: 1450,
     img: '/palazzo_9033.png'
   },
+
+  // LOOK 20 (Model 6 - 2601 Designer Peplum & Sharara)
   {
-    name: 'Embellished Organza Dupatta',
-    price: '₹980',
-    priceVal: 980,
-    img: '/dupatta_9033.png'
+    name: 'Designer Peplum Choli',
+    category: 'ZC-2601',
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/peplum_2601.png'
   },
   {
-    name: 'Gul-e-Noor 3-Piece Festive Set',
-    price: '₹4,929',
-    priceVal: 4929,
-    img: '/model_9033.png'
-  },
-  {
-    name: 'Zari Embroidered Kurta',
-    price: '₹2,499',
-    priceVal: 2499,
-    img: '/kurta_9033.png'
-  },
-  {
-    name: 'Flared Palazzo Pants',
-    price: '₹1,450',
-    priceVal: 1450,
-    img: '/palazzo_9033.png'
-  },
-  {
-    name: 'Embellished Organza Dupatta',
-    price: '₹980',
-    priceVal: 980,
-    img: '/dupatta_9033.png'
-  },
-  {
-    name: 'Gul-e-Noor 3-Piece Festive Set',
-    price: '₹4,929',
-    priceVal: 4929,
-    img: '/model_9033.png'
+    name: 'Royal Flared Sharara Pants',
+    category: 'ZC-2601',
+    price: '₹1,650',
+    priceVal: 1650,
+    img: '/palazzo_2601.png'
   }
 ];
 
@@ -90,7 +156,6 @@ const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
 const N = 6;
 const FIRST = 15;
-const MODEL_ASPECT_RATIO = 1136 / 2000; // 0.568
 
 const wrap = (x, n) => ((x % n) + n) % n;
 const clamp = (x, a, b) => Math.min(b, Math.max(a, x));
@@ -111,6 +176,7 @@ export default function App() {
   const ringRef = useRef(null);
   const rollRef = useRef(null);
   const lineRef = useRef(null);
+  const currentLookRef = useRef(0);
 
   // Modals & Drawers state
   const [cartOpen, setCartOpen] = useState(false);
@@ -186,6 +252,15 @@ export default function App() {
     );
   };
 
+  const shopCurrentLook = () => {
+    const lookIdx = wrap(Math.round(currentLookRef.current), N);
+    const item1Idx = (lookIdx * 2) % ITEMS.length;
+    const item2Idx = (lookIdx * 2 + 1) % ITEMS.length;
+    addToCart(item1Idx);
+    addToCart(item2Idx);
+    setCartOpen(true);
+  };
+
   const handleWhatsAppCheckout = () => {
     if (cart.length === 0) return;
     const itemsList = cart
@@ -211,15 +286,15 @@ export default function App() {
     rail.innerHTML = '';
     roll.innerHTML = '';
 
-    // Create Runway Models using user's photo from 11.jpg
-    const people = Array.from({ length: N }, (_, i) => {
+    // Create Runway Models (Look 15: 9033, Look 16: 2601, alternating)
+    const people = MODELS.map((model, i) => {
       const e = document.createElement('div');
       e.className = 'm';
       e.dataset.i = i;
 
       const img = document.createElement('img');
-      img.src = MODEL_SRC;
-      img.alt = `Zainab Collection Look ${FIRST + i}`;
+      img.src = model.img;
+      img.alt = `Zainab Collection Look ${FIRST + i} — ${model.name}`;
       img.draggable = false;
       img.style.width = '100%';
       img.style.height = '100%';
@@ -232,7 +307,7 @@ export default function App() {
 
       return {
         e,
-        r: MODEL_ASPECT_RATIO,
+        r: model.r,
         f: '',
         o: ''
       };
@@ -522,6 +597,8 @@ export default function App() {
         paint();
       }
 
+      currentLookRef.current = p;
+
       cx += (mx - cx) * 0.32;
       cy += (my - cy) * 0.32;
 
@@ -530,10 +607,24 @@ export default function App() {
     }
 
     // Preload & Init
-    const imgToPreload = new Image();
-    imgToPreload.src = MODEL_SRC;
-    imgToPreload.decode()
-      .catch(() => {})
+    const preloads = [
+      '/model_9033.png',
+      '/model_2601.png',
+      '/kurta_9033.png',
+      '/palazzo_9033.png',
+      '/peplum_2601.png',
+      '/palazzo_2601.png',
+      '/dupatta_9033.png',
+      '/dupatta_2601_card.png'
+    ];
+
+    Promise.all(
+      preloads.map((src) => {
+        const im = new Image();
+        im.src = src;
+        return im.decode().catch(() => {});
+      })
+    )
       .then(() => document.fonts.ready)
       .then(() => {
         size();
@@ -690,7 +781,7 @@ export default function App() {
             <button
               type="button"
               className="shop wide"
-              onClick={() => setCartOpen(true)}
+              onClick={shopCurrentLook}
             >
               Shop the look
             </button>
@@ -1040,7 +1131,11 @@ export default function App() {
             </div>
 
             <div style={{ padding: '16px 20px', maxHeight: '300px', overflowY: 'auto' }}>
-              {ITEMS.filter((it) => it.name.toLowerCase().includes(searchQuery.toLowerCase())).map((it, idx) => (
+              {ITEMS.filter(
+                (it) =>
+                  it.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                  (it.category && it.category.toLowerCase().includes(searchQuery.toLowerCase()))
+              ).map((it, idx) => (
                 <div
                   key={idx}
                   onClick={() => {
