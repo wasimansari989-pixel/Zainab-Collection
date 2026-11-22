@@ -61,6 +61,13 @@ const MODELS = [
     code: 'ZC-4029',
     img: '/model_4029.png',
     r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 23,
+    name: 'Aaira Smoky Mauve Handcrafted Suit',
+    code: 'ZC-3802',
+    img: '/model_3802.png',
+    r: 1280 / 1920 // 0.6667
   }
 ];
 
@@ -287,6 +294,34 @@ const ITEMS = [
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_4029_card.png'
+  },
+
+  // =========================================
+  // LOOK 23 (Dummy 9: ZC-3802 Smoky Mauve Festive Set)
+  // =========================================
+  {
+    name: 'Embroidered Smoky Mauve Kurti',
+    category: 'ZC-3802',
+    look: 23,
+    price: '₹2,950',
+    priceVal: 2950,
+    img: '/kurta_3802.png'
+  },
+  {
+    name: 'Flared Ash Rose Silk Palazzo',
+    category: 'ZC-3802',
+    look: 23,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_3802.png'
+  },
+  {
+    name: 'Organza Zari Border Dupatta',
+    category: 'ZC-3802',
+    look: 23,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_3802_card.png'
   }
 ];
 
@@ -296,7 +331,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 8;
+const N = 9;
 const FIRST = 15;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -760,6 +795,7 @@ export default function App() {
       '/model_3763.png',
       '/model_4022.png',
       '/model_4029.png',
+      '/model_3802.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -783,7 +819,10 @@ export default function App() {
       '/dupatta_4022_card.png',
       '/kurta_4029.png',
       '/palazzo_4029.png',
-      '/dupatta_4029_card.png'
+      '/dupatta_4029_card.png',
+      '/kurta_3802.png',
+      '/palazzo_3802.png',
+      '/dupatta_3802_card.png'
     ];
 
     Promise.all(
