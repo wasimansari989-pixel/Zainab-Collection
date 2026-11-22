@@ -22,31 +22,31 @@ const MODELS = [
   },
   {
     look: 17,
+    name: 'Shehr-e-Khaas Mink Ensemble',
+    code: 'ZC-1435',
+    img: '/model_1435.png',
+    r: 1152 / 2176 // 0.5294
+  },
+  {
+    look: 18,
     name: 'Gul-e-Noor Velvet Classic',
     code: 'ZC-9033',
     img: '/model_9033.png',
     r: 1136 / 2000
   },
   {
-    look: 18,
+    look: 19,
     name: 'Nazakat Sage Couture',
     code: 'ZC-2601',
     img: '/model_2601.png',
     r: 1216 / 1968
   },
   {
-    look: 19,
-    name: 'Royal Heritage Zari Set',
-    code: 'ZC-9033',
-    img: '/model_9033.png',
-    r: 1136 / 2000
-  },
-  {
     look: 20,
-    name: 'Emerald & Sage Luxe Edition',
-    code: 'ZC-2601',
-    img: '/model_2601.png',
-    r: 1216 / 1968
+    name: 'Shehr-e-Khaas Heritage Silver',
+    code: 'ZC-1435',
+    img: '/model_1435.png',
+    r: 1152 / 2176
   }
 ];
 
@@ -108,31 +108,31 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 17 (Dummy 3: ZC-9033 Mustard Handcrafted Set)
+  // LOOK 17 (Dummy 3: ZC-1435 Mink / Silver Grey Handcrafted Set)
   // =========================================
   {
-    name: 'Zari Embroidered Kurta',
-    category: 'ZC-9033',
+    name: 'Handcrafted Zari Kurta',
+    category: 'ZC-1435',
     look: 17,
-    price: '₹2,499',
-    priceVal: 2499,
-    img: '/kurta_9033.png'
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_1435.png'
   },
   {
-    name: 'Flared Palazzo Pants',
-    category: 'ZC-9033',
+    name: 'Tailored Silk Palazzo',
+    category: 'ZC-1435',
     look: 17,
-    price: '₹1,450',
-    priceVal: 1450,
-    img: '/palazzo_9033.png'
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_1435.png'
   },
   {
-    name: 'Embellished Organza Dupatta',
-    category: 'ZC-9033',
+    name: 'Embroidered Mink Dupatta',
+    category: 'ZC-1435',
     look: 17,
-    price: '₹980',
-    priceVal: 980,
-    img: '/dupatta_9033.png'
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_1435_card.png'
   },
 
   // =========================================
@@ -192,31 +192,31 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 20 (Dummy 6: ZC-2601 Sage Green Peplum & Sharara Set)
+  // LOOK 20 (Dummy 6: ZC-1435 Mink / Silver Grey Handcrafted Set)
   // =========================================
   {
-    name: 'Embroidered Peplum Kurti',
-    category: 'ZC-2601',
+    name: 'Handcrafted Zari Kurta',
+    category: 'ZC-1435',
     look: 20,
-    price: '₹2,799',
-    priceVal: 2799,
-    img: '/peplum_2601.png'
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_1435.png'
   },
   {
-    name: 'Flared Sharara Palazzo',
-    category: 'ZC-2601',
+    name: 'Tailored Silk Palazzo',
+    category: 'ZC-1435',
     look: 20,
-    price: '₹1,650',
-    priceVal: 1650,
-    img: '/palazzo_2601.png'
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_1435.png'
   },
   {
-    name: 'Scalloped Organza Dupatta',
-    category: 'ZC-2601',
+    name: 'Embroidered Mink Dupatta',
+    category: 'ZC-1435',
     look: 20,
-    price: '₹1,050',
-    priceVal: 1050,
-    img: '/dupatta_2601_card.png'
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_1435_card.png'
   }
 ];
 
@@ -684,12 +684,16 @@ export default function App() {
     const preloads = [
       '/model_9033.png',
       '/model_2601.png',
+      '/model_1435.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
+      '/dupatta_9033.png',
       '/peplum_2601.png',
       '/palazzo_2601.png',
-      '/dupatta_9033.png',
-      '/dupatta_2601_card.png'
+      '/dupatta_2601_card.png',
+      '/kurta_1435.png',
+      '/palazzo_1435.png',
+      '/dupatta_1435_card.png'
     ];
 
     Promise.all(
