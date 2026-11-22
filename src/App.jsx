@@ -47,6 +47,13 @@ const MODELS = [
     code: 'ZC-3763',
     img: '/model_3763.png',
     r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 21,
+    name: 'Rukhsaar Cinnamon Rust Ensemble',
+    code: 'ZC-4022',
+    img: '/model_4022.png',
+    r: 1280 / 1920 // 0.6667
   }
 ];
 
@@ -217,6 +224,34 @@ const ITEMS = [
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_3763_card.png'
+  },
+
+  // =========================================
+  // LOOK 21 (Dummy 7: ZC-4022 Cinnamon Rust Festive Set)
+  // =========================================
+  {
+    name: 'Handcrafted Cinnamon Kurti',
+    category: 'ZC-4022',
+    look: 21,
+    price: '₹2,999',
+    priceVal: 2999,
+    img: '/kurta_4022.png'
+  },
+  {
+    name: 'Straight Silk Pants',
+    category: 'ZC-4022',
+    look: 21,
+    price: '₹1,499',
+    priceVal: 1499,
+    img: '/palazzo_4022.png'
+  },
+  {
+    name: 'Organza Cinnamon Dupatta',
+    category: 'ZC-4022',
+    look: 21,
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_4022_card.png'
   }
 ];
 
@@ -226,7 +261,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 6;
+const N = 7;
 const FIRST = 15;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -688,6 +723,7 @@ export default function App() {
       '/model_9018.png',
       '/model_no.png',
       '/model_3763.png',
+      '/model_4022.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -705,7 +741,10 @@ export default function App() {
       '/dupatta_no_card.png',
       '/kurta_3763.png',
       '/palazzo_3763.png',
-      '/dupatta_3763_card.png'
+      '/dupatta_3763_card.png',
+      '/kurta_4022.png',
+      '/palazzo_4022.png',
+      '/dupatta_4022_card.png'
     ];
 
     Promise.all(
