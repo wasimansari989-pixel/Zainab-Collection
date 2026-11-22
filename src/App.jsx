@@ -29,24 +29,24 @@ const MODELS = [
   },
   {
     look: 18,
-    name: 'Gul-e-Noor Velvet Classic',
+    name: 'Afreen Peach Gold Anarkali',
+    code: 'ZC-9018',
+    img: '/model_9018.png',
+    r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 19,
+    name: 'Gul-e-Noor Classic Edition',
     code: 'ZC-9033',
     img: '/model_9033.png',
     r: 1136 / 2000
   },
   {
-    look: 19,
-    name: 'Nazakat Sage Couture',
-    code: 'ZC-2601',
-    img: '/model_2601.png',
-    r: 1216 / 1968
-  },
-  {
     look: 20,
-    name: 'Shehr-e-Khaas Heritage Silver',
-    code: 'ZC-1435',
-    img: '/model_1435.png',
-    r: 1152 / 2176
+    name: 'Afreen Royal Festive Edition',
+    code: 'ZC-9018',
+    img: '/model_9018.png',
+    r: 1280 / 1920
   }
 ];
 
@@ -136,31 +136,31 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 18 (Dummy 4: ZC-2601 Sage Green Peplum & Sharara Set)
+  // LOOK 18 (Dummy 4: ZC-9018 Peach Gold Anarkali Set)
   // =========================================
   {
-    name: 'Embroidered Peplum Kurti',
-    category: 'ZC-2601',
+    name: 'Embroidered Flared Kurti',
+    category: 'ZC-9018',
     look: 18,
-    price: '₹2,799',
-    priceVal: 2799,
-    img: '/peplum_2601.png'
+    price: '₹2,999',
+    priceVal: 2999,
+    img: '/kurta_9018.png'
   },
   {
-    name: 'Flared Sharara Palazzo',
-    category: 'ZC-2601',
+    name: 'Flared Silk Palazzo Pants',
+    category: 'ZC-9018',
     look: 18,
-    price: '₹1,650',
-    priceVal: 1650,
-    img: '/palazzo_2601.png'
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_9018.png'
   },
   {
-    name: 'Scalloped Organza Dupatta',
-    category: 'ZC-2601',
+    name: 'Scalloped Peach Dupatta',
+    category: 'ZC-9018',
     look: 18,
-    price: '₹1,050',
-    priceVal: 1050,
-    img: '/dupatta_2601_card.png'
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_9018_card.png'
   },
 
   // =========================================
@@ -192,31 +192,31 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 20 (Dummy 6: ZC-1435 Mink / Silver Grey Handcrafted Set)
+  // LOOK 20 (Dummy 6: ZC-9018 Peach Gold Anarkali Set)
   // =========================================
   {
-    name: 'Handcrafted Zari Kurta',
-    category: 'ZC-1435',
+    name: 'Embroidered Flared Kurti',
+    category: 'ZC-9018',
     look: 20,
-    price: '₹2,899',
-    priceVal: 2899,
-    img: '/kurta_1435.png'
+    price: '₹2,999',
+    priceVal: 2999,
+    img: '/kurta_9018.png'
   },
   {
-    name: 'Tailored Silk Palazzo',
-    category: 'ZC-1435',
+    name: 'Flared Silk Palazzo Pants',
+    category: 'ZC-9018',
     look: 20,
-    price: '₹1,550',
-    priceVal: 1550,
-    img: '/palazzo_1435.png'
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_9018.png'
   },
   {
-    name: 'Embroidered Mink Dupatta',
-    category: 'ZC-1435',
+    name: 'Scalloped Peach Dupatta',
+    category: 'ZC-9018',
     look: 20,
-    price: '₹1,150',
-    priceVal: 1150,
-    img: '/dupatta_1435_card.png'
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_9018_card.png'
   }
 ];
 
@@ -685,6 +685,7 @@ export default function App() {
       '/model_9033.png',
       '/model_2601.png',
       '/model_1435.png',
+      '/model_9018.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -693,7 +694,10 @@ export default function App() {
       '/dupatta_2601_card.png',
       '/kurta_1435.png',
       '/palazzo_1435.png',
-      '/dupatta_1435_card.png'
+      '/dupatta_1435_card.png',
+      '/kurta_9018.png',
+      '/palazzo_9018.png',
+      '/dupatta_9018_card.png'
     ];
 
     Promise.all(
