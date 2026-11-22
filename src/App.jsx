@@ -654,9 +654,12 @@ export default function App() {
         m.e.style.height = base + 'px';
       });
 
-      cardS = side ? 160 : rail.clientHeight / 3;
+      cardS = side
+        ? (rail.clientWidth || window.innerWidth) / 3
+        : rail.clientHeight / 3;
 
       cardElements.forEach((c) => {
+        c.style.width = side ? cardS + 'px' : '100%';
         c.style.height = side ? '100%' : cardS + 'px';
       });
 
@@ -815,6 +818,19 @@ export default function App() {
       }
     };
 
+    const onRailPointerDown = (e) => {
+      if (e.target.closest('a') || e.target.closest('button')) return;
+      down = true;
+      sx = e.clientX;
+      st = target;
+      moved = 0;
+      if (rail.setPointerCapture) {
+        try {
+          rail.setPointerCapture(e.pointerId);
+        } catch (_) {}
+      }
+    };
+
     stage.addEventListener('pointerenter', onPointerEnter);
     stage.addEventListener('pointerleave', onPointerLeave);
     stage.addEventListener('pointermove', onPointerMove);
@@ -823,6 +839,11 @@ export default function App() {
     stage.addEventListener('pointercancel', onRelease);
     stage.addEventListener('wheel', onWheel, { passive: false });
     stage.addEventListener('keydown', onKeyDown);
+
+    rail.addEventListener('pointerdown', onRailPointerDown);
+    rail.addEventListener('pointermove', onPointerMove);
+    rail.addEventListener('pointerup', onRelease);
+    rail.addEventListener('pointercancel', onRelease);
 
     // Animation Loop
     let animId;
@@ -924,6 +945,10 @@ export default function App() {
       cancelAnimationFrame(animId);
       window.removeEventListener('resize', size);
       rail.removeEventListener('click', onRailClick);
+      rail.removeEventListener('pointerdown', onRailPointerDown);
+      rail.removeEventListener('pointermove', onPointerMove);
+      rail.removeEventListener('pointerup', onRelease);
+      rail.removeEventListener('pointercancel', onRelease);
       stage.removeEventListener('pointerenter', onPointerEnter);
       stage.removeEventListener('pointerleave', onPointerLeave);
       stage.removeEventListener('pointermove', onPointerMove);
