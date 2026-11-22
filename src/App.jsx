@@ -1088,7 +1088,7 @@ export default function App() {
       {/* LOADING OVERLAY */}
       <div className={`wait ${loaded ? 'gone' : ''}`} id="wait">
         <div className="wait-spinner"></div>
-        <p className="wide" style={{ fontSize: '12px', letterSpacing: '0.2em' }}>
+        <p className="wide" style={{ fontSize: '17px', letterSpacing: '0.2em' }}>
           ZAINAB COLLECTION
         </p>
       </div>

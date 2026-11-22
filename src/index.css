@@ -85,7 +85,7 @@ header {
 }
 
 .brand {
-    font-size: calc(15.5 * var(--u));
+    font-size: calc(21.7 * var(--u));
     letter-spacing: .2em;
     cursor: pointer;
     display: flex;
@@ -94,7 +94,7 @@ header {
 }
 
 .brand-sub {
-    font-size: calc(8 * var(--u));
+    font-size: calc(10.5 * var(--u));
     letter-spacing: .15em;
     color: var(--mid);
     margin-left: calc(6 * var(--u));
@@ -646,7 +646,7 @@ a:focus-visible {
     }
 
     .brand {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .brand-sub {
