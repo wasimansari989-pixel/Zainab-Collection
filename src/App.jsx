@@ -51,10 +51,13 @@ const MODELS = [
 ];
 
 const ITEMS = [
-  // LOOK 15 (Model 1 - 9033 Mustard Handcrafted)
+  // =========================================
+  // LOOK 15 (Dummy 1: ZC-9033 Mustard Handcrafted Set)
+  // =========================================
   {
     name: 'Zari Embroidered Kurta',
     category: 'ZC-9033',
+    look: 15,
     price: '₹2,499',
     priceVal: 2499,
     img: '/kurta_9033.png'
@@ -62,15 +65,27 @@ const ITEMS = [
   {
     name: 'Flared Palazzo Pants',
     category: 'ZC-9033',
+    look: 15,
     price: '₹1,450',
     priceVal: 1450,
     img: '/palazzo_9033.png'
   },
+  {
+    name: 'Embellished Organza Dupatta',
+    category: 'ZC-9033',
+    look: 15,
+    price: '₹980',
+    priceVal: 980,
+    img: '/dupatta_9033.png'
+  },
 
-  // LOOK 16 (Model 2 - 2601 Sage Green Peplum & Sharara)
+  // =========================================
+  // LOOK 16 (Dummy 2: ZC-2601 Sage Green Peplum & Sharara Set)
+  // =========================================
   {
     name: 'Embroidered Peplum Kurti',
     category: 'ZC-2601',
+    look: 16,
     price: '₹2,799',
     priceVal: 2799,
     img: '/peplum_2601.png'
@@ -78,73 +93,130 @@ const ITEMS = [
   {
     name: 'Flared Sharara Palazzo',
     category: 'ZC-2601',
+    look: 16,
     price: '₹1,650',
     priceVal: 1650,
     img: '/palazzo_2601.png'
   },
-
-  // LOOK 17 (Model 3 - 9033 Dupatta & 3-Piece Set)
-  {
-    name: 'Embellished Organza Dupatta',
-    category: 'ZC-9033',
-    price: '₹980',
-    priceVal: 980,
-    img: '/dupatta_9033.png'
-  },
-  {
-    name: 'Gul-e-Noor 3-Piece Festive Set',
-    category: 'ZC-9033',
-    price: '₹4,929',
-    priceVal: 4929,
-    img: '/model_9033.png'
-  },
-
-  // LOOK 18 (Model 4 - 2601 Scallop Dupatta & 3-Piece Ensemble)
   {
     name: 'Scalloped Organza Dupatta',
     category: 'ZC-2601',
+    look: 16,
     price: '₹1,050',
     priceVal: 1050,
     img: '/dupatta_2601_card.png'
   },
-  {
-    name: 'Nazakat 3-Piece Designer Ensemble',
-    category: 'ZC-2601',
-    price: '₹5,499',
-    priceVal: 5499,
-    img: '/model_2601.png'
-  },
 
-  // LOOK 19 (Model 5 - 9033 Royal Zari Kurta & Palazzo)
+  // =========================================
+  // LOOK 17 (Dummy 3: ZC-9033 Mustard Handcrafted Set)
+  // =========================================
   {
-    name: 'Handcrafted Zari Kurta',
+    name: 'Zari Embroidered Kurta',
     category: 'ZC-9033',
+    look: 17,
     price: '₹2,499',
     priceVal: 2499,
     img: '/kurta_9033.png'
   },
   {
-    name: 'Flared Chanderi Palazzo',
+    name: 'Flared Palazzo Pants',
     category: 'ZC-9033',
+    look: 17,
     price: '₹1,450',
     priceVal: 1450,
     img: '/palazzo_9033.png'
   },
-
-  // LOOK 20 (Model 6 - 2601 Designer Peplum & Sharara)
   {
-    name: 'Designer Peplum Choli',
+    name: 'Embellished Organza Dupatta',
+    category: 'ZC-9033',
+    look: 17,
+    price: '₹980',
+    priceVal: 980,
+    img: '/dupatta_9033.png'
+  },
+
+  // =========================================
+  // LOOK 18 (Dummy 4: ZC-2601 Sage Green Peplum & Sharara Set)
+  // =========================================
+  {
+    name: 'Embroidered Peplum Kurti',
     category: 'ZC-2601',
+    look: 18,
     price: '₹2,799',
     priceVal: 2799,
     img: '/peplum_2601.png'
   },
   {
-    name: 'Royal Flared Sharara Pants',
+    name: 'Flared Sharara Palazzo',
     category: 'ZC-2601',
+    look: 18,
     price: '₹1,650',
     priceVal: 1650,
     img: '/palazzo_2601.png'
+  },
+  {
+    name: 'Scalloped Organza Dupatta',
+    category: 'ZC-2601',
+    look: 18,
+    price: '₹1,050',
+    priceVal: 1050,
+    img: '/dupatta_2601_card.png'
+  },
+
+  // =========================================
+  // LOOK 19 (Dummy 5: ZC-9033 Mustard Handcrafted Set)
+  // =========================================
+  {
+    name: 'Zari Embroidered Kurta',
+    category: 'ZC-9033',
+    look: 19,
+    price: '₹2,499',
+    priceVal: 2499,
+    img: '/kurta_9033.png'
+  },
+  {
+    name: 'Flared Palazzo Pants',
+    category: 'ZC-9033',
+    look: 19,
+    price: '₹1,450',
+    priceVal: 1450,
+    img: '/palazzo_9033.png'
+  },
+  {
+    name: 'Embellished Organza Dupatta',
+    category: 'ZC-9033',
+    look: 19,
+    price: '₹980',
+    priceVal: 980,
+    img: '/dupatta_9033.png'
+  },
+
+  // =========================================
+  // LOOK 20 (Dummy 6: ZC-2601 Sage Green Peplum & Sharara Set)
+  // =========================================
+  {
+    name: 'Embroidered Peplum Kurti',
+    category: 'ZC-2601',
+    look: 20,
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/peplum_2601.png'
+  },
+  {
+    name: 'Flared Sharara Palazzo',
+    category: 'ZC-2601',
+    look: 20,
+    price: '₹1,650',
+    priceVal: 1650,
+    img: '/palazzo_2601.png'
+  },
+  {
+    name: 'Scalloped Organza Dupatta',
+    category: 'ZC-2601',
+    look: 20,
+    price: '₹1,050',
+    priceVal: 1050,
+    img: '/dupatta_2601_card.png'
   }
 ];
 
@@ -254,10 +326,12 @@ export default function App() {
 
   const shopCurrentLook = () => {
     const lookIdx = wrap(Math.round(currentLookRef.current), N);
-    const item1Idx = (lookIdx * 2) % ITEMS.length;
-    const item2Idx = (lookIdx * 2 + 1) % ITEMS.length;
+    const item1Idx = (lookIdx * 3) % ITEMS.length;
+    const item2Idx = (lookIdx * 3 + 1) % ITEMS.length;
+    const item3Idx = (lookIdx * 3 + 2) % ITEMS.length;
     addToCart(item1Idx);
     addToCart(item2Idx);
+    addToCart(item3Idx);
     setCartOpen(true);
   };
 
@@ -458,11 +532,11 @@ export default function App() {
         m.e.style.zIndex = 100 - Math.round(d * 10);
       });
 
-      // 2. Product Rail Vertical Slider
+      // 2. Product Rail Vertical Slider (Exactly 3 cards per dummy)
       const all = cardS * ITEMS.length;
       cardElements.forEach((c, i) => {
-        let y = wrap(i * cardS - p * 2 * cardS, all);
-        if (y > all - cardS) {
+        let y = wrap(i * cardS - p * 3 * cardS, all);
+        if (y > all - cardS * 3) {
           y -= all;
         }
 
