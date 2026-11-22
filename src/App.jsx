@@ -68,6 +68,20 @@ const MODELS = [
     code: 'ZC-3802',
     img: '/model_3802.png',
     r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 24,
+    name: 'Noor-e-Zeba Olive Gold Set',
+    code: 'ZC-3762',
+    img: '/model_3762.png',
+    r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 25,
+    name: 'Afnan Charcoal Slate Ensemble',
+    code: 'ZC-3803',
+    img: '/model_3803.png',
+    r: 1280 / 1920 // 0.6667
   }
 ];
 
@@ -322,6 +336,62 @@ const ITEMS = [
     price: '₹1,150',
     priceVal: 1150,
     img: '/dupatta_3802_card.png'
+  },
+
+  // =========================================
+  // LOOK 24 (Dummy 10: ZC-3762 Olive Gold Festive Set)
+  // =========================================
+  {
+    name: 'Handcrafted Olive Gold Kurti',
+    category: 'ZC-3762',
+    look: 24,
+    price: '₹2,950',
+    priceVal: 2950,
+    img: '/kurta_3762.png'
+  },
+  {
+    name: 'Flared Sage Chanderi Palazzo',
+    category: 'ZC-3762',
+    look: 24,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_3762.png'
+  },
+  {
+    name: 'Organza Zari Border Dupatta',
+    category: 'ZC-3762',
+    look: 24,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_3762_card.png'
+  },
+
+  // =========================================
+  // LOOK 25 (Dummy 11: ZC-3803 Charcoal Slate Ensemble)
+  // =========================================
+  {
+    name: 'Embroidered Slate Grey Kurti',
+    category: 'ZC-3803',
+    look: 25,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_3803.png'
+  },
+  {
+    name: 'Flared Silver Ash Palazzo',
+    category: 'ZC-3803',
+    look: 25,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_3803.png'
+  },
+  {
+    name: 'Organza Slate Scallop Dupatta',
+    category: 'ZC-3803',
+    look: 25,
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_3803_card.png'
   }
 ];
 
@@ -331,7 +401,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 9;
+const N = 11;
 const FIRST = 15;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -796,6 +866,8 @@ export default function App() {
       '/model_4022.png',
       '/model_4029.png',
       '/model_3802.png',
+      '/model_3762.png',
+      '/model_3803.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -822,7 +894,13 @@ export default function App() {
       '/dupatta_4029_card.png',
       '/kurta_3802.png',
       '/palazzo_3802.png',
-      '/dupatta_3802_card.png'
+      '/dupatta_3802_card.png',
+      '/kurta_3762.png',
+      '/palazzo_3762.png',
+      '/dupatta_3762_card.png',
+      '/kurta_3803.png',
+      '/palazzo_3803.png',
+      '/dupatta_3803_card.png'
     ];
 
     Promise.all(
