@@ -36,16 +36,16 @@ const MODELS = [
   },
   {
     look: 19,
-    name: 'Gul-e-Noor Classic Edition',
-    code: 'ZC-9033',
-    img: '/model_9033.png',
-    r: 1136 / 2000
+    name: 'Gul-e-Lalarukh Terracotta Suit',
+    code: 'ZC-NO',
+    img: '/model_no.png',
+    r: 1280 / 1920 // 0.6667
   },
   {
     look: 20,
-    name: 'Afreen Royal Festive Edition',
-    code: 'ZC-9018',
-    img: '/model_9018.png',
+    name: 'Lalarukh Royal Festive Edition',
+    code: 'ZC-NO',
+    img: '/model_no.png',
     r: 1280 / 1920
   }
 ];
@@ -164,59 +164,59 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 19 (Dummy 5: ZC-9033 Mustard Handcrafted Set)
+  // LOOK 19 (Dummy 5: ZC-NO Terracotta Rose Festive Set)
   // =========================================
   {
-    name: 'Zari Embroidered Kurta',
-    category: 'ZC-9033',
+    name: 'Embroidered Rose Kurti',
+    category: 'ZC-NO',
     look: 19,
-    price: '₹2,499',
-    priceVal: 2499,
-    img: '/kurta_9033.png'
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/kurta_no.png'
   },
   {
-    name: 'Flared Palazzo Pants',
-    category: 'ZC-9033',
+    name: 'Flared Terracotta Palazzo',
+    category: 'ZC-NO',
     look: 19,
-    price: '₹1,450',
-    priceVal: 1450,
-    img: '/palazzo_9033.png'
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_no.png'
   },
   {
-    name: 'Embellished Organza Dupatta',
-    category: 'ZC-9033',
+    name: 'Embellished Rose Dupatta',
+    category: 'ZC-NO',
     look: 19,
-    price: '₹980',
-    priceVal: 980,
-    img: '/dupatta_9033.png'
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_no_card.png'
   },
 
   // =========================================
-  // LOOK 20 (Dummy 6: ZC-9018 Peach Gold Anarkali Set)
+  // LOOK 20 (Dummy 6: ZC-NO Terracotta Rose Festive Set)
   // =========================================
   {
-    name: 'Embroidered Flared Kurti',
-    category: 'ZC-9018',
+    name: 'Embroidered Rose Kurti',
+    category: 'ZC-NO',
     look: 20,
-    price: '₹2,999',
-    priceVal: 2999,
-    img: '/kurta_9018.png'
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/kurta_no.png'
   },
   {
-    name: 'Flared Silk Palazzo Pants',
-    category: 'ZC-9018',
+    name: 'Flared Terracotta Palazzo',
+    category: 'ZC-NO',
     look: 20,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_9018.png'
+    img: '/palazzo_no.png'
   },
   {
-    name: 'Scalloped Peach Dupatta',
-    category: 'ZC-9018',
+    name: 'Embellished Rose Dupatta',
+    category: 'ZC-NO',
     look: 20,
-    price: '₹1,199',
-    priceVal: 1199,
-    img: '/dupatta_9018_card.png'
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_no_card.png'
   }
 ];
 
@@ -686,6 +686,7 @@ export default function App() {
       '/model_2601.png',
       '/model_1435.png',
       '/model_9018.png',
+      '/model_no.png',
       '/kurta_9033.png',
       '/palazzo_9033.png',
       '/dupatta_9033.png',
@@ -697,7 +698,10 @@ export default function App() {
       '/dupatta_1435_card.png',
       '/kurta_9018.png',
       '/palazzo_9018.png',
-      '/dupatta_9018_card.png'
+      '/dupatta_9018_card.png',
+      '/kurta_no.png',
+      '/palazzo_no.png',
+      '/dupatta_no_card.png'
     ];
 
     Promise.all(
