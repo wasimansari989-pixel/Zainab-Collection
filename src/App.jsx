@@ -233,21 +233,23 @@ const MODELS = [
   },
   {
     look: 26,
-    name: 'Latika Crimson Wine Festive Suit',
+    name: 'Latika Crimson Wine Draped Saree',
     code: 'ZC-LATIKA-82',
     img: '/model_latika_82.webp',
     r: 0.4079,
     price: '₹5,699',
-    priceVal: 5699
+    priceVal: 5699,
+    isSaree: true
   },
   {
     look: 27,
-    name: 'Latika Almond Gold Festive Suit',
+    name: 'Latika Almond Gold Draped Saree',
     code: 'ZC-LATIKA-89',
     img: '/model_latika_89.webp',
     r: 0.3797,
     price: '₹5,799',
-    priceVal: 5799
+    priceVal: 5799,
+    isSaree: true
   }
 ];
 
@@ -939,59 +941,69 @@ const ITEMS = [
   },
 
   // =========================================
-  // LOOK 26 (Latika 82: ZC-LATIKA-82 Festive Ensemble)
+  // LOOK 26 (Latika 82: ZC-LATIKA-82 Saree Ensemble)
   // =========================================
   {
-    name: 'Handcrafted Zari Kurti',
+    name: 'Latika Crimson Wine Ready-to-Wear Saree',
     category: 'ZC-LATIKA-82',
     look: 26,
-    price: '₹2,699',
-    priceVal: 2699,
-    img: '/model_latika_82.webp'
+    price: '₹5,699',
+    priceVal: 5699,
+    img: '/model_latika_82.webp',
+    isSaree: true,
+    pieceLabel: 'EXCLUSIVE READY-TO-WEAR SAREE',
+    setTag: 'Complete Saree Ensemble • Blouse Included'
   },
   {
-    name: 'Flared Silk Palazzo Pants',
+    name: '',
     category: 'ZC-LATIKA-82',
     look: 26,
-    price: '₹1,850',
-    priceVal: 1850,
-    img: '/model_latika_82.webp'
+    price: '',
+    priceVal: 0,
+    img: '',
+    isSpacer: true
   },
   {
-    name: 'Embellished Organza Dupatta',
+    name: '',
     category: 'ZC-LATIKA-82',
     look: 26,
-    price: '₹1,150',
-    priceVal: 1150,
-    img: '/model_latika_82.webp'
+    price: '',
+    priceVal: 0,
+    img: '',
+    isSpacer: true
   },
 
   // =========================================
-  // LOOK 27 (Latika 89: ZC-LATIKA-89 Festive Ensemble)
+  // LOOK 27 (Latika 89: ZC-LATIKA-89 Saree Ensemble)
   // =========================================
   {
-    name: 'Designer Zari Work Kurti',
+    name: 'Latika Almond Gold Ready-to-Wear Saree',
     category: 'ZC-LATIKA-89',
     look: 27,
-    price: '₹2,799',
-    priceVal: 2799,
-    img: '/model_latika_89.webp'
+    price: '₹5,799',
+    priceVal: 5799,
+    img: '/model_latika_89.webp',
+    isSaree: true,
+    pieceLabel: 'EXCLUSIVE READY-TO-WEAR SAREE',
+    setTag: 'Complete Saree Ensemble • Blouse Included'
   },
   {
-    name: 'Matching Flared Sharara Pants',
+    name: '',
     category: 'ZC-LATIKA-89',
     look: 27,
-    price: '₹1,850',
-    priceVal: 1850,
-    img: '/model_latika_89.webp'
+    price: '',
+    priceVal: 0,
+    img: '',
+    isSpacer: true
   },
   {
-    name: 'Pure Organza Border Dupatta',
+    name: '',
     category: 'ZC-LATIKA-89',
     look: 27,
-    price: '₹1,150',
-    priceVal: 1150,
-    img: '/model_latika_89.webp'
+    price: '',
+    priceVal: 0,
+    img: '',
+    isSpacer: true
   }
 ];
 
@@ -1026,6 +1038,7 @@ export default function App() {
   const lookNameRef = useRef(null);
   const lookPriceRef = useRef(null);
   const lookFavRef = useRef(null);
+  const lookBadgeRef = useRef(null);
   const wishlistRef = useRef([]);
 
   // Modals & Drawers state
@@ -1070,14 +1083,17 @@ export default function App() {
   const addPackageToCart = (lookIdx) => {
     const model = MODELS[lookIdx];
     if (!model) return;
+    const isSaree = Boolean(model.isSaree || model.look >= 26);
     const item1 = ITEMS[lookIdx * 3];
     const item2 = ITEMS[lookIdx * 3 + 1];
     const item3 = ITEMS[lookIdx * 3 + 2];
-    const piecesList = [
-      item1?.name || 'Embroidered Kurti',
-      item2?.name || 'Flared Bottom / Sharara',
-      item3?.name || 'Organza Dupatta'
-    ];
+    const piecesList = isSaree
+      ? ['Pre-Draped Ready-to-Wear Saree', 'Designer Stitched Blouse']
+      : [
+          item1?.name || 'Embroidered Kurti',
+          item2?.name || 'Flared Bottom / Sharara',
+          item3?.name || 'Organza Dupatta'
+        ];
 
     setCart((prev) => {
       const existing = prev.find((it) => it.look === model.look);
@@ -1090,7 +1106,7 @@ export default function App() {
         ...prev,
         {
           look: model.look,
-          name: `${model.name} (Complete 3-Piece Set)`,
+          name: `${model.name} (${isSaree ? 'Ready-to-Wear Saree' : 'Complete 3-Piece Set'})`,
           code: model.code,
           price: model.price,
           priceVal: model.priceVal,
@@ -1150,7 +1166,7 @@ export default function App() {
       )
       .join('\n\n');
     const total = cart.reduce((sum, it) => sum + it.priceVal * it.qty, 0);
-    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Complete Suit Packages:*\n${itemsList}\n\n*Total Order Amount:* ₹${total.toLocaleString('en-IN')}\n*Store Location:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
+    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Outfits:*\n${itemsList}\n\n*Total Order Amount:* ₹${total.toLocaleString('en-IN')}\n*Store Location:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
     window.open(`https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
@@ -1199,12 +1215,46 @@ export default function App() {
     const pieceLabels = ['01 • KURTI / TOP', '02 • BOTTOM / SHARARA', '03 • DUPATTA'];
     const cardElements = ITEMS.map((item, i) => {
       const e = document.createElement('article');
-      e.className = 'card' + (i % 2 ? ' alt' : '');
       e.dataset.index = i;
       e.dataset.look = Math.floor(i / 3);
 
-      const pieceLabel = pieceLabels[i % 3];
+      if (item.isSpacer) {
+        e.className = 'card card-spacer';
+        e.style.display = 'none';
+        e.style.width = '0px';
+        e.style.height = '0px';
+        e.style.padding = '0';
+        e.style.border = 'none';
+        e.style.pointerEvents = 'none';
+        e.setAttribute('aria-hidden', 'true');
+        rail.append(e);
+        return e;
+      }
 
+      if (item.isSaree) {
+        e.className = 'card card-saree' + (i % 2 ? ' alt' : '');
+        e.innerHTML = `
+          <div class="card-saree-inner">
+            <span class="card-saree-shot">
+              <img src="${item.img}" alt="${item.name}" loading="lazy" />
+            </span>
+            <div class="card-saree-meta">
+              <div class="card-piece-tag wide">${item.pieceLabel || 'EXCLUSIVE READY-TO-WEAR SAREE'}</div>
+              <h3 class="wide">${item.name}</h3>
+              <span class="card-set-tag">${item.setTag || 'Complete Saree Ensemble • Blouse Included'}</span>
+              <div class="card-saree-badges">
+                <span class="card-saree-badge">Single Piece Ensemble</span>
+                <span class="card-saree-badge card-saree-action">Tap to View Full Saree ↗</span>
+              </div>
+            </div>
+          </div>
+        `;
+        rail.append(e);
+        return e;
+      }
+
+      const pieceLabel = pieceLabels[i % 3];
+      e.className = 'card' + (i % 2 ? ' alt' : '');
       e.innerHTML = `
         <div class="card-piece-tag wide">${pieceLabel}</div>
 
@@ -1232,7 +1282,7 @@ export default function App() {
     // Event Delegation: Tapping any piece card previews the look with complete outfit
     const onRailClick = (e) => {
       const card = e.target.closest('.card');
-      if (card) {
+      if (card && !card.classList.contains('card-spacer')) {
         const itemIdx = parseInt(card.dataset.index, 10);
         const lookIdx = Math.floor(itemIdx / 3);
         const clickedModel = MODELS[lookIdx];
@@ -1274,8 +1324,19 @@ export default function App() {
         : rail.clientHeight / 3;
 
       cardElements.forEach((c) => {
-        c.style.width = side ? cardS + 'px' : '100%';
-        c.style.height = side ? '100%' : cardS + 'px';
+        if (c.classList.contains('card-spacer')) {
+          c.style.display = 'none';
+          c.style.width = '0px';
+          c.style.height = '0px';
+        } else if (c.classList.contains('card-saree')) {
+          c.style.display = 'flex';
+          c.style.width = side ? (cardS * 3) + 'px' : '100%';
+          c.style.height = side ? '100%' : (cardS * 3) + 'px';
+        } else {
+          c.style.display = 'flex';
+          c.style.width = side ? cardS + 'px' : '100%';
+          c.style.height = side ? '100%' : cardS + 'px';
+        }
       });
 
       dirty = true;
@@ -1325,9 +1386,10 @@ export default function App() {
         m.e.style.zIndex = 100 - Math.round(d * 10);
       });
 
-      // 2. Product Rail Vertical Slider (Exactly 3 cards per dummy)
+      // 2. Product Rail Vertical Slider
       const all = cardS * ITEMS.length;
       cardElements.forEach((c, i) => {
+        if (c.classList.contains('card-spacer')) return;
         let y = wrap(i * cardS - p * 3 * cardS, all);
         if (y > all - cardS * 3) {
           y -= all;
@@ -1349,6 +1411,10 @@ export default function App() {
         lookNameRef.current.dataset.idx = String(activeIdx);
         lookNameRef.current.textContent = MODELS[activeIdx].name;
         if (lookPriceRef.current) lookPriceRef.current.textContent = MODELS[activeIdx].price;
+        if (lookBadgeRef.current) {
+          const isSaree = Boolean(MODELS[activeIdx]?.isSaree || MODELS[activeIdx]?.look >= 26);
+          lookBadgeRef.current.textContent = isSaree ? 'DESIGNER SAREE' : 'COMPLETE 3-PC SET';
+        }
         if (lookFavRef.current) {
           const isFav = wishlistRef.current.includes(MODELS[activeIdx].look);
           lookFavRef.current.setAttribute('aria-pressed', isFav ? 'true' : 'false');
@@ -1785,7 +1851,7 @@ export default function App() {
                 <span className="tag-package-price" ref={lookPriceRef}>
                   {MODELS[0].price}
                 </span>
-                <span className="tag-package-badge">COMPLETE 3-PC SET</span>
+                <span className="tag-package-badge" ref={lookBadgeRef}>COMPLETE 3-PC SET</span>
               </div>
             </div>
 
@@ -2002,7 +2068,9 @@ export default function App() {
                               LOOK {m.look} • {m.code}
                             </span>
                             <h4 className="wide" style={{ fontSize: '11.5px', letterSpacing: '0.08em', margin: '2px 0', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{m.name}</h4>
-                            <p style={{ fontSize: '10px', color: '#64748b', margin: '1px 0' }}>Complete 3-Pc Package</p>
+                            <p style={{ fontSize: '10px', color: '#64748b', margin: '1px 0' }}>
+                              {m.isSaree || m.look >= 26 ? 'Designer Saree Ensemble' : 'Complete 3-Pc Package'}
+                            </p>
                             <span style={{ fontSize: '12.5px', fontWeight: '700', color: '#0f172a' }}>{m.price}</span>
                           </div>
                         </div>
@@ -2187,7 +2255,9 @@ export default function App() {
                     <div>
                       <span style={{ fontSize: '9px', fontWeight: '600', color: '#b98179', letterSpacing: '0.12em' }}>LOOK {m.look}</span>
                       <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em', margin: '2px 0' }}>{m.name}</h4>
-                      <p style={{ fontSize: '10px', color: '#64748b' }}>Complete 3-Piece Set • {m.code}</p>
+                      <p style={{ fontSize: '10px', color: '#64748b' }}>
+                        {m.isSaree || m.look >= 26 ? 'Designer Saree Ensemble' : 'Complete 3-Piece Set'} • {m.code}
+                      </p>
                     </div>
                   </div>
                   <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#0f172a' }}>{m.price}</span>
@@ -2245,11 +2315,17 @@ export default function App() {
                     </svg>
                   </button>
                   <span className="preview-price-val">{previewModel.price}</span>
-                  <span className="preview-price-sub">3-PC SET</span>
+                  <span className="preview-price-sub">
+                    {previewModel.isSaree || previewModel.look >= 26 ? 'SAREE SET' : '3-PC SET'}
+                  </span>
                 </div>
               </div>
               <p className="preview-pieces-list">
-                Includes: <span>Kurti / Top</span> + <span>Bottom / Sharara</span> + <span>Organza Dupatta</span>
+                {previewModel.isSaree || previewModel.look >= 26 ? (
+                  <>Includes: <span>Pre-Draped Ready-to-Wear Saree</span> + <span>Designer Stitched Blouse</span></>
+                ) : (
+                  <>Includes: <span>Kurti / Top</span> + <span>Bottom / Sharara</span> + <span>Organza Dupatta</span></>
+                )}
               </p>
               <button
                 type="button"
@@ -2260,7 +2336,9 @@ export default function App() {
                   setCartOpen(true);
                 }}
               >
-                Shop Complete Set • {previewModel.price}
+                {previewModel.isSaree || previewModel.look >= 26
+                  ? `Shop Saree Ensemble • ${previewModel.price}`
+                  : `Shop Complete Set • ${previewModel.price}`}
               </button>
             </div>
           </div>
