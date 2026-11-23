@@ -10,7 +10,7 @@ const MODELS = [
     look: 1,
     name: 'Gul-e-Noor Zari Suit',
     code: 'ZC-9033',
-    img: '/model_9033.png',
+    img: '/model_9033.webp',
     r: 0.568,
     price: '₹4,929',
     priceVal: 4929
@@ -19,7 +19,7 @@ const MODELS = [
     look: 2,
     name: 'Nazakat Peplum & Sharara',
     code: 'ZC-2601',
-    img: '/model_2601.png',
+    img: '/model_2601.webp',
     r: 0.6178861788617886,
     price: '₹5,499',
     priceVal: 5499
@@ -28,7 +28,7 @@ const MODELS = [
     look: 3,
     name: 'Shehr-e-Khaas Mink Ensemble',
     code: 'ZC-1435',
-    img: '/model_1435.png',
+    img: '/model_1435.webp',
     r: 0.5294117647058824,
     price: '₹5,599',
     priceVal: 5599
@@ -37,7 +37,7 @@ const MODELS = [
     look: 4,
     name: 'Afreen Peach Gold Anarkali',
     code: 'ZC-9018',
-    img: '/model_9018.png',
+    img: '/model_9018.webp',
     r: 0.6666666666666666,
     price: '₹5,797',
     priceVal: 5797
@@ -46,7 +46,7 @@ const MODELS = [
     look: 5,
     name: 'Gul-e-Lalarukh Terracotta Suit',
     code: 'ZC-NO',
-    img: '/model_no.png',
+    img: '/model_no.webp',
     r: 0.6666666666666666,
     price: '₹5,548',
     priceVal: 5548
@@ -55,7 +55,7 @@ const MODELS = [
     look: 6,
     name: 'Nazneen Champagne Rose Suit',
     code: 'ZC-3763',
-    img: '/model_3763.png',
+    img: '/model_3763.webp',
     r: 0.6666666666666666,
     price: '₹5,599',
     priceVal: 5599
@@ -64,7 +64,7 @@ const MODELS = [
     look: 7,
     name: 'Rukhsaar Cinnamon Rust Ensemble',
     code: 'ZC-4022',
-    img: '/model_4022.png',
+    img: '/model_4022.webp',
     r: 0.6666666666666666,
     price: '₹5,697',
     priceVal: 5697
@@ -73,7 +73,7 @@ const MODELS = [
     look: 8,
     name: 'Mehtab Dusty Rose Festive Suit',
     code: 'ZC-4029',
-    img: '/model_4029.png',
+    img: '/model_4029.webp',
     r: 0.6666666666666666,
     price: '₹5,599',
     priceVal: 5599
@@ -82,7 +82,7 @@ const MODELS = [
     look: 9,
     name: 'Aaira Smoky Mauve Handcrafted Suit',
     code: 'ZC-3802',
-    img: '/model_3802.png',
+    img: '/model_3802.webp',
     r: 0.6666666666666666,
     price: '₹5,650',
     priceVal: 5650
@@ -91,7 +91,7 @@ const MODELS = [
     look: 10,
     name: 'Noor-e-Zeba Olive Gold Set',
     code: 'ZC-3762',
-    img: '/model_3762.png',
+    img: '/model_3762.webp',
     r: 0.6666666666666666,
     price: '₹5,699',
     priceVal: 5699
@@ -100,7 +100,7 @@ const MODELS = [
     look: 11,
     name: 'Afnan Charcoal Slate Ensemble',
     code: 'ZC-3803',
-    img: '/model_3803.png',
+    img: '/model_3803.webp',
     r: 0.6666666666666666,
     price: '₹5,648',
     priceVal: 5648
@@ -109,7 +109,7 @@ const MODELS = [
     look: 12,
     name: 'Mehrunisa Rose Wine Festive Set',
     code: 'ZC-4024',
-    img: '/model_4024.png',
+    img: '/model_4024.webp',
     r: 0.6667,
     price: '₹5,699',
     priceVal: 5699
@@ -118,7 +118,7 @@ const MODELS = [
     look: 13,
     name: 'Zohra Antique Brass Gold Set',
     code: 'ZC-4026',
-    img: '/model_4026.png',
+    img: '/model_4026.webp',
     r: 0.6667,
     price: '₹5,648',
     priceVal: 5648
@@ -127,7 +127,7 @@ const MODELS = [
     look: 14,
     name: 'Nilofer Seafoam Slate Ensemble',
     code: 'ZC-4010',
-    img: '/model_4010.png',
+    img: '/model_4010.webp',
     r: 0.6667,
     price: '₹5,748',
     priceVal: 5748
@@ -136,7 +136,7 @@ const MODELS = [
     look: 15,
     name: 'Anarkali Rust Ochre Festive Set',
     code: 'ZC-4009',
-    img: '/model_4009.png',
+    img: '/model_4009.webp',
     r: 0.6667,
     price: '₹5,550',
     priceVal: 5550
@@ -145,7 +145,7 @@ const MODELS = [
     look: 16,
     name: 'Parizaad Sage Willow Chanderi Set',
     code: 'ZC-91124',
-    img: '/model_91124.png',
+    img: '/model_91124.webp',
     r: 0.7544,
     price: '₹5,648',
     priceVal: 5648
@@ -154,7 +154,7 @@ const MODELS = [
     look: 17,
     name: 'Shab-e-Noor Midnight Black Ensemble',
     code: 'ZC-1116',
-    img: '/model_1116.png',
+    img: '/model_1116.webp',
     r: 0.5794,
     price: '₹6,099',
     priceVal: 6099
@@ -163,7 +163,7 @@ const MODELS = [
     look: 18,
     name: 'Yasmin Mint Celadon Festive Suit',
     code: 'ZC-91075',
-    img: '/model_91075.png',
+    img: '/model_91075.webp',
     r: 0.7544,
     price: '₹5,599',
     priceVal: 5599
@@ -172,7 +172,7 @@ const MODELS = [
     look: 19,
     name: 'Firdaus Peach Coral Festive Ensemble',
     code: 'ZC-91075-1',
-    img: '/model_91075_1.png',
+    img: '/model_91075_1.webp',
     r: 0.7544,
     price: '₹5,699',
     priceVal: 5699
@@ -181,7 +181,7 @@ const MODELS = [
     look: 20,
     name: 'Mumtaz Pearl Champagne Ensemble',
     code: 'ZC-91125',
-    img: '/model_91125.png',
+    img: '/model_91125.webp',
     r: 0.7544,
     price: '₹5,748',
     priceVal: 5748
@@ -190,7 +190,7 @@ const MODELS = [
     look: 21,
     name: 'Gul-e-Rana Plum & Ivory Festive Set',
     code: 'ZC-9033-2',
-    img: '/model_9033_2.png',
+    img: '/model_9033_2.webp',
     r: 0.5,
     price: '₹5,648',
     priceVal: 5648
@@ -199,7 +199,7 @@ const MODELS = [
     look: 22,
     name: 'Bahaar Teal & Cream Silk Set',
     code: 'ZC-9033-1',
-    img: '/model_9033_1.png',
+    img: '/model_9033_1.webp',
     r: 0.7544,
     price: '₹5,550',
     priceVal: 5550
@@ -208,7 +208,7 @@ const MODELS = [
     look: 23,
     name: 'Dilkash Crimson & Off-White Set',
     code: 'ZC-9033-3',
-    img: '/model_9033_3.png',
+    img: '/model_9033_3.webp',
     r: 0.7544,
     price: '₹5,648',
     priceVal: 5648
@@ -217,7 +217,7 @@ const MODELS = [
     look: 24,
     name: 'Jahanara Emerald Peacock Ensemble',
     code: 'ZC-9703',
-    img: '/model_9703.png',
+    img: '/model_9703.webp',
     r: 0.6667,
     price: '₹5,948',
     priceVal: 5948
@@ -226,10 +226,28 @@ const MODELS = [
     look: 25,
     name: 'Gul-e-Dawood Silver Sage Suit',
     code: 'ZC-NO-1',
-    img: '/model_no_1.png',
+    img: '/model_no_1.webp',
     r: 0.6667,
     price: '₹5,599',
     priceVal: 5599
+  },
+  {
+    look: 26,
+    name: 'Latika Crimson Wine Festive Suit',
+    code: 'ZC-LATIKA-82',
+    img: '/model_latika_82.webp',
+    r: 0.4079,
+    price: '₹5,699',
+    priceVal: 5699
+  },
+  {
+    look: 27,
+    name: 'Latika Almond Gold Festive Suit',
+    code: 'ZC-LATIKA-89',
+    img: '/model_latika_89.webp',
+    r: 0.3797,
+    price: '₹5,799',
+    priceVal: 5799
   }
 ];
 
@@ -243,7 +261,7 @@ const ITEMS = [
     look: 1,
     price: '₹2,499',
     priceVal: 2499,
-    img: '/kurta_9033.png'
+    img: '/kurta_9033.webp'
   },
   {
     name: 'Flared Palazzo Pants',
@@ -251,7 +269,7 @@ const ITEMS = [
     look: 1,
     price: '₹1,450',
     priceVal: 1450,
-    img: '/palazzo_9033.png'
+    img: '/palazzo_9033.webp'
   },
   {
     name: 'Embellished Organza Dupatta',
@@ -259,7 +277,7 @@ const ITEMS = [
     look: 1,
     price: '₹980',
     priceVal: 980,
-    img: '/dupatta_9033.png'
+    img: '/dupatta_9033.webp'
   },
 
   // =========================================
@@ -271,7 +289,7 @@ const ITEMS = [
     look: 2,
     price: '₹2,799',
     priceVal: 2799,
-    img: '/peplum_2601.png'
+    img: '/peplum_2601.webp'
   },
   {
     name: 'Flared Sharara Palazzo',
@@ -279,7 +297,7 @@ const ITEMS = [
     look: 2,
     price: '₹1,650',
     priceVal: 1650,
-    img: '/palazzo_2601.png'
+    img: '/palazzo_2601.webp'
   },
   {
     name: 'Scalloped Organza Dupatta',
@@ -287,7 +305,7 @@ const ITEMS = [
     look: 2,
     price: '₹1,050',
     priceVal: 1050,
-    img: '/dupatta_2601_card.png'
+    img: '/dupatta_2601_card.webp'
   },
 
   // =========================================
@@ -299,7 +317,7 @@ const ITEMS = [
     look: 3,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_1435.png'
+    img: '/kurta_1435.webp'
   },
   {
     name: 'Tailored Silk Palazzo',
@@ -307,7 +325,7 @@ const ITEMS = [
     look: 3,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_1435.png'
+    img: '/palazzo_1435.webp'
   },
   {
     name: 'Embroidered Mink Dupatta',
@@ -315,7 +333,7 @@ const ITEMS = [
     look: 3,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_1435_card.png'
+    img: '/dupatta_1435_card.webp'
   },
 
   // =========================================
@@ -327,7 +345,7 @@ const ITEMS = [
     look: 4,
     price: '₹2,999',
     priceVal: 2999,
-    img: '/kurta_9018.png'
+    img: '/kurta_9018.webp'
   },
   {
     name: 'Flared Silk Palazzo Pants',
@@ -335,7 +353,7 @@ const ITEMS = [
     look: 4,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_9018.png'
+    img: '/palazzo_9018.webp'
   },
   {
     name: 'Scalloped Peach Dupatta',
@@ -343,7 +361,7 @@ const ITEMS = [
     look: 4,
     price: '₹1,199',
     priceVal: 1199,
-    img: '/dupatta_9018_card.png'
+    img: '/dupatta_9018_card.webp'
   },
 
   // =========================================
@@ -355,7 +373,7 @@ const ITEMS = [
     look: 5,
     price: '₹2,799',
     priceVal: 2799,
-    img: '/kurta_no.png'
+    img: '/kurta_no.webp'
   },
   {
     name: 'Flared Terracotta Palazzo',
@@ -363,7 +381,7 @@ const ITEMS = [
     look: 5,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_no.png'
+    img: '/palazzo_no.webp'
   },
   {
     name: 'Embellished Rose Dupatta',
@@ -371,7 +389,7 @@ const ITEMS = [
     look: 5,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_no_card.png'
+    img: '/dupatta_no_card.webp'
   },
 
   // =========================================
@@ -383,7 +401,7 @@ const ITEMS = [
     look: 6,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_3763.png'
+    img: '/kurta_3763.webp'
   },
   {
     name: 'Flared Almond Palazzo Pants',
@@ -391,7 +409,7 @@ const ITEMS = [
     look: 6,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_3763.png'
+    img: '/palazzo_3763.webp'
   },
   {
     name: 'Scalloped Champagne Dupatta',
@@ -399,7 +417,7 @@ const ITEMS = [
     look: 6,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_3763_card.png'
+    img: '/dupatta_3763_card.webp'
   },
 
   // =========================================
@@ -411,7 +429,7 @@ const ITEMS = [
     look: 7,
     price: '₹2,999',
     priceVal: 2999,
-    img: '/kurta_4022.png'
+    img: '/kurta_4022.webp'
   },
   {
     name: 'Straight Silk Pants',
@@ -419,7 +437,7 @@ const ITEMS = [
     look: 7,
     price: '₹1,499',
     priceVal: 1499,
-    img: '/palazzo_4022.png'
+    img: '/palazzo_4022.webp'
   },
   {
     name: 'Organza Cinnamon Dupatta',
@@ -427,7 +445,7 @@ const ITEMS = [
     look: 7,
     price: '₹1,199',
     priceVal: 1199,
-    img: '/dupatta_4022_card.png'
+    img: '/dupatta_4022_card.webp'
   },
 
   // =========================================
@@ -439,7 +457,7 @@ const ITEMS = [
     look: 8,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_4029.png'
+    img: '/kurta_4029.webp'
   },
   {
     name: 'Flared Soft Mauve Palazzo',
@@ -447,7 +465,7 @@ const ITEMS = [
     look: 8,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_4029.png'
+    img: '/palazzo_4029.webp'
   },
   {
     name: 'Organza Pastel Rose Dupatta',
@@ -455,7 +473,7 @@ const ITEMS = [
     look: 8,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_4029_card.png'
+    img: '/dupatta_4029_card.webp'
   },
 
   // =========================================
@@ -467,7 +485,7 @@ const ITEMS = [
     look: 9,
     price: '₹2,950',
     priceVal: 2950,
-    img: '/kurta_3802.png'
+    img: '/kurta_3802.webp'
   },
   {
     name: 'Flared Ash Rose Silk Palazzo',
@@ -475,7 +493,7 @@ const ITEMS = [
     look: 9,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_3802.png'
+    img: '/palazzo_3802.webp'
   },
   {
     name: 'Organza Zari Border Dupatta',
@@ -483,7 +501,7 @@ const ITEMS = [
     look: 9,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_3802_card.png'
+    img: '/dupatta_3802_card.webp'
   },
 
   // =========================================
@@ -495,7 +513,7 @@ const ITEMS = [
     look: 10,
     price: '₹2,950',
     priceVal: 2950,
-    img: '/kurta_3762.png'
+    img: '/kurta_3762.webp'
   },
   {
     name: 'Flared Sage Chanderi Palazzo',
@@ -503,7 +521,7 @@ const ITEMS = [
     look: 10,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_3762.png'
+    img: '/palazzo_3762.webp'
   },
   {
     name: 'Organza Zari Border Dupatta',
@@ -511,7 +529,7 @@ const ITEMS = [
     look: 10,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_3762_card.png'
+    img: '/dupatta_3762_card.webp'
   },
 
   // =========================================
@@ -523,7 +541,7 @@ const ITEMS = [
     look: 11,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_3803.png'
+    img: '/kurta_3803.webp'
   },
   {
     name: 'Flared Silver Ash Palazzo',
@@ -531,7 +549,7 @@ const ITEMS = [
     look: 11,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_3803.png'
+    img: '/palazzo_3803.webp'
   },
   {
     name: 'Organza Slate Scallop Dupatta',
@@ -539,7 +557,7 @@ const ITEMS = [
     look: 11,
     price: '₹1,199',
     priceVal: 1199,
-    img: '/dupatta_3803_card.png'
+    img: '/dupatta_3803_card.webp'
   },
   // =========================================
   // LOOK 12 (ZC-4024)
@@ -550,7 +568,7 @@ const ITEMS = [
     look: 12,
     price: '₹2,950',
     priceVal: 2950,
-    img: '/kurta_4024.png'
+    img: '/kurta_4024.webp'
   },
   {
     name: 'Flared Berry Silk Palazzo',
@@ -558,7 +576,7 @@ const ITEMS = [
     look: 12,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_4024.png'
+    img: '/palazzo_4024.webp'
   },
   {
     name: 'Organza Zari Border Dupatta',
@@ -566,7 +584,7 @@ const ITEMS = [
     look: 12,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_4024_card.png'
+    img: '/dupatta_4024_card.webp'
   },
   // =========================================
   // LOOK 13 (ZC-4026)
@@ -577,7 +595,7 @@ const ITEMS = [
     look: 13,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_4026.png'
+    img: '/kurta_4026.webp'
   },
   {
     name: 'Flared Khaki Silk Palazzo',
@@ -585,7 +603,7 @@ const ITEMS = [
     look: 13,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_4026.png'
+    img: '/palazzo_4026.webp'
   },
   {
     name: 'Embroidered Organza Gold Dupatta',
@@ -593,7 +611,7 @@ const ITEMS = [
     look: 13,
     price: '₹1,199',
     priceVal: 1199,
-    img: '/dupatta_4026_card.png'
+    img: '/dupatta_4026_card.webp'
   },
   // =========================================
   // LOOK 14 (ZC-4010)
@@ -604,7 +622,7 @@ const ITEMS = [
     look: 14,
     price: '₹2,999',
     priceVal: 2999,
-    img: '/kurta_4010.png'
+    img: '/kurta_4010.webp'
   },
   {
     name: 'Flared Silver Mist Palazzo Pants',
@@ -612,7 +630,7 @@ const ITEMS = [
     look: 14,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_4010.png'
+    img: '/palazzo_4010.webp'
   },
   {
     name: 'Handcrafted Scalloped Net Dupatta',
@@ -620,7 +638,7 @@ const ITEMS = [
     look: 14,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_4010_card.png'
+    img: '/dupatta_4010_card.webp'
   },
   // =========================================
   // LOOK 15 (ZC-4009)
@@ -631,7 +649,7 @@ const ITEMS = [
     look: 15,
     price: '₹2,850',
     priceVal: 2850,
-    img: '/kurta_4009.png'
+    img: '/kurta_4009.webp'
   },
   {
     name: 'Flared Rust Silk Blend Palazzo',
@@ -639,7 +657,7 @@ const ITEMS = [
     look: 15,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_4009.png'
+    img: '/palazzo_4009.webp'
   },
   {
     name: 'Organza Zari Embroidered Dupatta',
@@ -647,7 +665,7 @@ const ITEMS = [
     look: 15,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_4009_card.png'
+    img: '/dupatta_4009_card.webp'
   },
   // =========================================
   // LOOK 16 (ZC-91124)
@@ -658,7 +676,7 @@ const ITEMS = [
     look: 16,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_91124.png'
+    img: '/kurta_91124.webp'
   },
   {
     name: 'Flared Chanderi Silk Palazzo',
@@ -666,7 +684,7 @@ const ITEMS = [
     look: 16,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_91124.png'
+    img: '/palazzo_91124.webp'
   },
   {
     name: 'Organza Pastel Scalloped Dupatta',
@@ -674,7 +692,7 @@ const ITEMS = [
     look: 16,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_91124_card.png'
+    img: '/dupatta_91124_card.webp'
   },
   // =========================================
   // LOOK 17 (ZC-1116)
@@ -685,7 +703,7 @@ const ITEMS = [
     look: 17,
     price: '₹3,199',
     priceVal: 3199,
-    img: '/kurta_1116.png'
+    img: '/kurta_1116.webp'
   },
   {
     name: 'Flared Noir Silk Palazzo Pants',
@@ -693,7 +711,7 @@ const ITEMS = [
     look: 17,
     price: '₹1,650',
     priceVal: 1650,
-    img: '/palazzo_1116.png'
+    img: '/palazzo_1116.webp'
   },
   {
     name: 'Embroidered Onyx Zari Border Dupatta',
@@ -701,7 +719,7 @@ const ITEMS = [
     look: 17,
     price: '₹1,250',
     priceVal: 1250,
-    img: '/dupatta_1116_card.png'
+    img: '/dupatta_1116_card.webp'
   },
   // =========================================
   // LOOK 18 (ZC-91075)
@@ -712,7 +730,7 @@ const ITEMS = [
     look: 18,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_91075.png'
+    img: '/kurta_91075.webp'
   },
   {
     name: 'Flared Mint Silk Blend Palazzo',
@@ -720,7 +738,7 @@ const ITEMS = [
     look: 18,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_91075.png'
+    img: '/palazzo_91075.webp'
   },
   {
     name: 'Organza Hand Embroidered Dupatta',
@@ -728,7 +746,7 @@ const ITEMS = [
     look: 18,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_91075_card.png'
+    img: '/dupatta_91075_card.webp'
   },
   // =========================================
   // LOOK 19 (ZC-91075-1)
@@ -739,7 +757,7 @@ const ITEMS = [
     look: 19,
     price: '₹2,950',
     priceVal: 2950,
-    img: '/kurta_91075_1.png'
+    img: '/kurta_91075_1.webp'
   },
   {
     name: 'Flared Blushed Apricot Palazzo',
@@ -747,7 +765,7 @@ const ITEMS = [
     look: 19,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_91075_1.png'
+    img: '/palazzo_91075_1.webp'
   },
   {
     name: 'Organza Coral Scallop Dupatta',
@@ -755,7 +773,7 @@ const ITEMS = [
     look: 19,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_91075_1_card.png'
+    img: '/dupatta_91075_1_card.webp'
   },
   // =========================================
   // LOOK 20 (ZC-91125)
@@ -766,7 +784,7 @@ const ITEMS = [
     look: 20,
     price: '₹2,999',
     priceVal: 2999,
-    img: '/kurta_91125.png'
+    img: '/kurta_91125.webp'
   },
   {
     name: 'Flared Almond Silk Palazzo Pants',
@@ -774,7 +792,7 @@ const ITEMS = [
     look: 20,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_91125.png'
+    img: '/palazzo_91125.webp'
   },
   {
     name: 'Organza Pearl Border Dupatta',
@@ -782,7 +800,7 @@ const ITEMS = [
     look: 20,
     price: '₹1,199',
     priceVal: 1199,
-    img: '/dupatta_91125_card.png'
+    img: '/dupatta_91125_card.webp'
   },
   // =========================================
   // LOOK 21 (ZC-9033-2)
@@ -793,7 +811,7 @@ const ITEMS = [
     look: 21,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_9033_2.png'
+    img: '/kurta_9033_2.webp'
   },
   {
     name: 'Flared Deep Plum Silk Palazzo',
@@ -801,7 +819,7 @@ const ITEMS = [
     look: 21,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_9033_2.png'
+    img: '/palazzo_9033_2.webp'
   },
   {
     name: 'Organza Plum Border Pure Dupatta',
@@ -809,7 +827,7 @@ const ITEMS = [
     look: 21,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_9033_2_card.png'
+    img: '/dupatta_9033_2_card.webp'
   },
   // =========================================
   // LOOK 22 (ZC-9033-1)
@@ -820,7 +838,7 @@ const ITEMS = [
     look: 22,
     price: '₹2,850',
     priceVal: 2850,
-    img: '/kurta_9033_1.png'
+    img: '/kurta_9033_1.webp'
   },
   {
     name: 'Flared Deep Teal Silk Palazzo',
@@ -828,7 +846,7 @@ const ITEMS = [
     look: 22,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_9033_1.png'
+    img: '/palazzo_9033_1.webp'
   },
   {
     name: 'Organza Teal Border Dupatta',
@@ -836,7 +854,7 @@ const ITEMS = [
     look: 22,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_9033_1_card.png'
+    img: '/dupatta_9033_1_card.webp'
   },
   // =========================================
   // LOOK 23 (ZC-9033-3)
@@ -847,7 +865,7 @@ const ITEMS = [
     look: 23,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_9033_3.png'
+    img: '/kurta_9033_3.webp'
   },
   {
     name: 'Flared Crimson Maroon Silk Palazzo',
@@ -855,7 +873,7 @@ const ITEMS = [
     look: 23,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_9033_3.png'
+    img: '/palazzo_9033_3.webp'
   },
   {
     name: 'Organza Crimson Scallop Dupatta',
@@ -863,7 +881,7 @@ const ITEMS = [
     look: 23,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_9033_3_card.png'
+    img: '/dupatta_9033_3_card.webp'
   },
   // =========================================
   // LOOK 24 (ZC-9703)
@@ -874,7 +892,7 @@ const ITEMS = [
     look: 24,
     price: '₹3,099',
     priceVal: 3099,
-    img: '/kurta_9703.png'
+    img: '/kurta_9703.webp'
   },
   {
     name: 'Flared Deep Peacock Silk Pants',
@@ -882,7 +900,7 @@ const ITEMS = [
     look: 24,
     price: '₹1,599',
     priceVal: 1599,
-    img: '/palazzo_9703.png'
+    img: '/palazzo_9703.webp'
   },
   {
     name: 'Embroidered Peacock Organza Dupatta',
@@ -890,7 +908,7 @@ const ITEMS = [
     look: 24,
     price: '₹1,250',
     priceVal: 1250,
-    img: '/dupatta_9703_card.png'
+    img: '/dupatta_9703_card.webp'
   },
   // =========================================
   // LOOK 25 (ZC-NO-1)
@@ -901,7 +919,7 @@ const ITEMS = [
     look: 25,
     price: '₹2,899',
     priceVal: 2899,
-    img: '/kurta_no_1.png'
+    img: '/kurta_no_1.webp'
   },
   {
     name: 'Flared Eucalyptus Silk Palazzo',
@@ -909,7 +927,7 @@ const ITEMS = [
     look: 25,
     price: '₹1,550',
     priceVal: 1550,
-    img: '/palazzo_no_1.png'
+    img: '/palazzo_no_1.webp'
   },
   {
     name: 'Organza Silver Sage Border Dupatta',
@@ -917,7 +935,63 @@ const ITEMS = [
     look: 25,
     price: '₹1,150',
     priceVal: 1150,
-    img: '/dupatta_no_1_card.png'
+    img: '/dupatta_no_1_card.webp'
+  },
+
+  // =========================================
+  // LOOK 26 (Latika 82: ZC-LATIKA-82 Festive Ensemble)
+  // =========================================
+  {
+    name: 'Handcrafted Zari Kurti',
+    category: 'ZC-LATIKA-82',
+    look: 26,
+    price: '₹2,699',
+    priceVal: 2699,
+    img: '/model_latika_82.webp'
+  },
+  {
+    name: 'Flared Silk Palazzo Pants',
+    category: 'ZC-LATIKA-82',
+    look: 26,
+    price: '₹1,850',
+    priceVal: 1850,
+    img: '/model_latika_82.webp'
+  },
+  {
+    name: 'Embellished Organza Dupatta',
+    category: 'ZC-LATIKA-82',
+    look: 26,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/model_latika_82.webp'
+  },
+
+  // =========================================
+  // LOOK 27 (Latika 89: ZC-LATIKA-89 Festive Ensemble)
+  // =========================================
+  {
+    name: 'Designer Zari Work Kurti',
+    category: 'ZC-LATIKA-89',
+    look: 27,
+    price: '₹2,799',
+    priceVal: 2799,
+    img: '/model_latika_89.webp'
+  },
+  {
+    name: 'Matching Flared Sharara Pants',
+    category: 'ZC-LATIKA-89',
+    look: 27,
+    price: '₹1,850',
+    priceVal: 1850,
+    img: '/model_latika_89.webp'
+  },
+  {
+    name: 'Pure Organza Border Dupatta',
+    category: 'ZC-LATIKA-89',
+    look: 27,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/model_latika_89.webp'
   }
 ];
 
@@ -927,7 +1001,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 25;
+const N = MODELS.length;
 const FIRST = 1;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -1424,106 +1498,108 @@ export default function App() {
 
     // Preload & Init
     const preloads = [
-      '/model_9033.png',
-      '/model_2601.png',
-      '/model_1435.png',
-      '/model_9018.png',
-      '/model_no.png',
-      '/model_3763.png',
-      '/model_4022.png',
-      '/model_4029.png',
-      '/model_3802.png',
-      '/model_3762.png',
-      '/model_3803.png',
-      '/kurta_9033.png',
-      '/palazzo_9033.png',
-      '/dupatta_9033.png',
-      '/peplum_2601.png',
-      '/palazzo_2601.png',
-      '/dupatta_2601_card.png',
-      '/kurta_1435.png',
-      '/palazzo_1435.png',
-      '/dupatta_1435_card.png',
-      '/kurta_9018.png',
-      '/palazzo_9018.png',
-      '/dupatta_9018_card.png',
-      '/kurta_no.png',
-      '/palazzo_no.png',
-      '/dupatta_no_card.png',
-      '/kurta_3763.png',
-      '/palazzo_3763.png',
-      '/dupatta_3763_card.png',
-      '/kurta_4022.png',
-      '/palazzo_4022.png',
-      '/dupatta_4022_card.png',
-      '/kurta_4029.png',
-      '/palazzo_4029.png',
-      '/dupatta_4029_card.png',
-      '/kurta_3802.png',
-      '/palazzo_3802.png',
-      '/dupatta_3802_card.png',
-      '/kurta_3762.png',
-      '/palazzo_3762.png',
-      '/dupatta_3762_card.png',
-      '/kurta_3803.png',
-      '/palazzo_3803.png',
-      '/dupatta_3803_card.png',
-      '/model_4024.png',
-      '/kurta_4024.png',
-      '/palazzo_4024.png',
-      '/dupatta_4024_card.png',
-      '/model_4026.png',
-      '/kurta_4026.png',
-      '/palazzo_4026.png',
-      '/dupatta_4026_card.png',
-      '/model_4010.png',
-      '/kurta_4010.png',
-      '/palazzo_4010.png',
-      '/dupatta_4010_card.png',
-      '/model_4009.png',
-      '/kurta_4009.png',
-      '/palazzo_4009.png',
-      '/dupatta_4009_card.png',
-      '/model_91124.png',
-      '/kurta_91124.png',
-      '/palazzo_91124.png',
-      '/dupatta_91124_card.png',
-      '/model_1116.png',
-      '/kurta_1116.png',
-      '/palazzo_1116.png',
-      '/dupatta_1116_card.png',
-      '/model_91075.png',
-      '/kurta_91075.png',
-      '/palazzo_91075.png',
-      '/dupatta_91075_card.png',
-      '/model_91075_1.png',
-      '/kurta_91075_1.png',
-      '/palazzo_91075_1.png',
-      '/dupatta_91075_1_card.png',
-      '/model_91125.png',
-      '/kurta_91125.png',
-      '/palazzo_91125.png',
-      '/dupatta_91125_card.png',
-      '/model_9033_2.png',
-      '/kurta_9033_2.png',
-      '/palazzo_9033_2.png',
-      '/dupatta_9033_2_card.png',
-      '/model_9033_1.png',
-      '/kurta_9033_1.png',
-      '/palazzo_9033_1.png',
-      '/dupatta_9033_1_card.png',
-      '/model_9033_3.png',
-      '/kurta_9033_3.png',
-      '/palazzo_9033_3.png',
-      '/dupatta_9033_3_card.png',
-      '/model_9703.png',
-      '/kurta_9703.png',
-      '/palazzo_9703.png',
-      '/dupatta_9703_card.png',
-      '/model_no_1.png',
-      '/kurta_no_1.png',
-      '/palazzo_no_1.png',
-      '/dupatta_no_1_card.png'
+      '/model_9033.webp',
+      '/model_2601.webp',
+      '/model_1435.webp',
+      '/model_9018.webp',
+      '/model_no.webp',
+      '/model_3763.webp',
+      '/model_4022.webp',
+      '/model_4029.webp',
+      '/model_3802.webp',
+      '/model_3762.webp',
+      '/model_3803.webp',
+      '/kurta_9033.webp',
+      '/palazzo_9033.webp',
+      '/dupatta_9033.webp',
+      '/peplum_2601.webp',
+      '/palazzo_2601.webp',
+      '/dupatta_2601_card.webp',
+      '/kurta_1435.webp',
+      '/palazzo_1435.webp',
+      '/dupatta_1435_card.webp',
+      '/kurta_9018.webp',
+      '/palazzo_9018.webp',
+      '/dupatta_9018_card.webp',
+      '/kurta_no.webp',
+      '/palazzo_no.webp',
+      '/dupatta_no_card.webp',
+      '/kurta_3763.webp',
+      '/palazzo_3763.webp',
+      '/dupatta_3763_card.webp',
+      '/kurta_4022.webp',
+      '/palazzo_4022.webp',
+      '/dupatta_4022_card.webp',
+      '/kurta_4029.webp',
+      '/palazzo_4029.webp',
+      '/dupatta_4029_card.webp',
+      '/kurta_3802.webp',
+      '/palazzo_3802.webp',
+      '/dupatta_3802_card.webp',
+      '/kurta_3762.webp',
+      '/palazzo_3762.webp',
+      '/dupatta_3762_card.webp',
+      '/kurta_3803.webp',
+      '/palazzo_3803.webp',
+      '/dupatta_3803_card.webp',
+      '/model_4024.webp',
+      '/kurta_4024.webp',
+      '/palazzo_4024.webp',
+      '/dupatta_4024_card.webp',
+      '/model_4026.webp',
+      '/kurta_4026.webp',
+      '/palazzo_4026.webp',
+      '/dupatta_4026_card.webp',
+      '/model_4010.webp',
+      '/kurta_4010.webp',
+      '/palazzo_4010.webp',
+      '/dupatta_4010_card.webp',
+      '/model_4009.webp',
+      '/kurta_4009.webp',
+      '/palazzo_4009.webp',
+      '/dupatta_4009_card.webp',
+      '/model_91124.webp',
+      '/kurta_91124.webp',
+      '/palazzo_91124.webp',
+      '/dupatta_91124_card.webp',
+      '/model_1116.webp',
+      '/kurta_1116.webp',
+      '/palazzo_1116.webp',
+      '/dupatta_1116_card.webp',
+      '/model_91075.webp',
+      '/kurta_91075.webp',
+      '/palazzo_91075.webp',
+      '/dupatta_91075_card.webp',
+      '/model_91075_1.webp',
+      '/kurta_91075_1.webp',
+      '/palazzo_91075_1.webp',
+      '/dupatta_91075_1_card.webp',
+      '/model_91125.webp',
+      '/kurta_91125.webp',
+      '/palazzo_91125.webp',
+      '/dupatta_91125_card.webp',
+      '/model_9033_2.webp',
+      '/kurta_9033_2.webp',
+      '/palazzo_9033_2.webp',
+      '/dupatta_9033_2_card.webp',
+      '/model_9033_1.webp',
+      '/kurta_9033_1.webp',
+      '/palazzo_9033_1.webp',
+      '/dupatta_9033_1_card.webp',
+      '/model_9033_3.webp',
+      '/kurta_9033_3.webp',
+      '/palazzo_9033_3.webp',
+      '/dupatta_9033_3_card.webp',
+      '/model_9703.webp',
+      '/kurta_9703.webp',
+      '/palazzo_9703.webp',
+      '/dupatta_9703_card.webp',
+      '/model_no_1.webp',
+      '/kurta_no_1.webp',
+      '/palazzo_no_1.webp',
+      '/dupatta_no_1_card.webp',
+      '/model_latika_82.webp',
+      '/model_latika_89.webp'
     ];
 
     Promise.all(
