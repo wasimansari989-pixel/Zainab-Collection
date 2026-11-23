@@ -1585,12 +1585,13 @@ export default function App() {
             <button type="button" onClick={() => setCartOpen(true)}>Shop</button>
           </nav>
 
-          {/* Right Account & Bag */}
+          {/* Right Account, Like & Bag */}
           <div className="acct wide">
-            <button type="button" onClick={() => setStoreOpen(true)}>Login</button>
+            <button type="button" className="desk-only" onClick={() => setStoreOpen(true)}>Login</button>
 
             <button
               type="button"
+              className="desk-only"
               onClick={() => setSearchOpen(true)}
               aria-label="Search Collection"
             >
@@ -1600,33 +1601,31 @@ export default function App() {
               </svg>
             </button>
 
+            {/* Like Button */}
             <button
               type="button"
               onClick={() => setWishlistOpen(true)}
-              aria-label="Saved Looks"
+              className={`header-like-btn ${wishlist.length > 0 ? 'has-likes' : ''}`}
+              aria-label="Liked Products"
             >
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" className="header-heart-icon">
                 <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.600 4.600 0 0 1 20.500 9C20.500 15 12 20 12 20Z" />
               </svg>
+              <span>Like ( <span id="likes">{wishlist.length}</span> )</span>
             </button>
 
+            {/* Cart Button */}
             <button
               type="button"
               onClick={() => setCartOpen(true)}
-              aria-label="Bag"
+              className="header-cart-btn"
+              aria-label="Shopping Cart"
             >
-              <svg viewBox="0 0 24 24">
+              <svg viewBox="0 0 24 24" className="header-bag-icon desk-only">
                 <path d="M5 8h14l1 13H4Z" />
                 <path d="M9 10V6a3 3 0 0 1 6 0v4" />
               </svg>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setCartOpen(true)}
-              className="mob-show"
-            >
-              Cart (<span id="cart">{totalCartCount}</span>)
+              <span>Cart ( <span id="cart">{totalCartCount}</span> )</span>
             </button>
           </div>
         </div>
@@ -1880,25 +1879,29 @@ export default function App() {
       )}
 
       {/* =========================================
-          WISHLIST MODAL
+          WISHLIST / LIKED PRODUCTS MODAL
       ========================================== */}
       {wishlistOpen && (
         <div className="modal-backdrop" onClick={() => setWishlistOpen(false)}>
           <div className="modal-card" onClick={(e) => e.stopPropagation()}>
-            <div style={{ padding: '20px 24px', borderBottom: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <h3 className="wide" style={{ fontSize: '12px', letterSpacing: '0.18em' }}>
-                Saved Looks ({wishlist.length})
+            <div style={{ padding: '16px 20px', borderBottom: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h3 className="wide" style={{ fontSize: '12.5px', letterSpacing: '0.14em', margin: 0, textTransform: 'uppercase' }}>
+                Liked Products ({wishlist.length})
               </h3>
-              <button type="button" onClick={() => setWishlistOpen(false)} style={{ fontSize: '18px' }}>✕</button>
+              <button type="button" onClick={() => setWishlistOpen(false)} style={{ fontSize: '18px', background: 'none', border: 'none', cursor: 'pointer', padding: '4px 8px' }}>✕</button>
             </div>
 
-            <div style={{ padding: '20px 24px', maxHeight: '380px', overflowY: 'auto' }}>
+            <div style={{ padding: '16px 20px', maxHeight: '420px', overflowY: 'auto' }}>
               {wishlist.length === 0 ? (
-                <p style={{ color: 'var(--mid)', textAlign: 'center', padding: '30px 0', fontSize: '13px' }}>
-                  No saved looks yet. Tap the heart icon on any look to save the complete outfit package.
-                </p>
+                <div style={{ textAlign: 'center', padding: '36px 16px' }}>
+                  <div style={{ fontSize: '28px', color: '#b98179', marginBottom: '10px' }}>♡</div>
+                  <p style={{ color: 'var(--mid)', fontSize: '13px', lineHeight: 1.5, margin: 0 }}>
+                    No liked products yet.<br />
+                    Tap the heart icon (<span style={{ color: '#b98179' }}>♡</span>) on any look to like and check it here anytime.
+                  </p>
+                </div>
               ) : (
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {wishlist.map((lookNum) => {
                     const m = MODELS.find((mod) => mod.look === lookNum);
                     if (!m) return null;
@@ -1911,21 +1914,23 @@ export default function App() {
                           justifyContent: 'space-between',
                           padding: '12px 14px',
                           background: '#f8fafc',
-                          borderRadius: '8px'
+                          borderRadius: '10px',
+                          border: '1px solid #edf2f7',
+                          gap: '10px'
                         }}
                       >
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                          <img src={m.img} alt={m.name} style={{ width: '42px', height: '60px', objectFit: 'contain' }} />
-                          <div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', minWidth: 0 }}>
+                          <img src={m.img} alt={m.name} style={{ width: '42px', height: '60px', objectFit: 'contain', flexShrink: 0 }} />
+                          <div style={{ minWidth: 0 }}>
                             <span style={{ fontSize: '9px', fontWeight: '600', color: '#b98179', letterSpacing: '0.12em' }}>
-                              LOOK {m.look}
+                              LOOK {m.look} • {m.code}
                             </span>
-                            <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em', margin: '2px 0' }}>{m.name}</h4>
-                            <p style={{ fontSize: '10px', color: '#64748b' }}>Complete 3-Piece Set • {m.code}</p>
-                            <span style={{ fontSize: '12px', fontWeight: 'bold', color: '#0f172a' }}>{m.price}</span>
+                            <h4 className="wide" style={{ fontSize: '11.5px', letterSpacing: '0.08em', margin: '2px 0', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{m.name}</h4>
+                            <p style={{ fontSize: '10px', color: '#64748b', margin: '1px 0' }}>Complete 3-Pc Package</p>
+                            <span style={{ fontSize: '12.5px', fontWeight: '700', color: '#0f172a' }}>{m.price}</span>
                           </div>
                         </div>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', alignItems: 'flex-end', flexShrink: 0 }}>
                           <button
                             type="button"
                             onClick={() => {
@@ -1935,21 +1940,23 @@ export default function App() {
                             }}
                             className="wide"
                             style={{
-                              background: 'var(--ink)',
+                              background: '#0f172a',
                               color: '#fff',
                               fontSize: '10px',
-                              letterSpacing: '0.12em',
-                              padding: '6px 12px',
-                              borderRadius: '4px',
-                              cursor: 'pointer'
+                              letterSpacing: '0.1em',
+                              padding: '7px 12px',
+                              borderRadius: '6px',
+                              border: 'none',
+                              cursor: 'pointer',
+                              whiteSpace: 'nowrap'
                             }}
                           >
-                            Add Set to Bag
+                            Add to Bag
                           </button>
                           <button
                             type="button"
                             onClick={() => togglePackageWishlist(m.look - 1)}
-                            style={{ color: '#b98179', fontSize: '11px', cursor: 'pointer' }}
+                            style={{ color: '#94a3b8', fontSize: '10.5px', background: 'none', border: 'none', cursor: 'pointer', padding: '2px 4px' }}
                           >
                             Remove
                           </button>
@@ -2140,7 +2147,7 @@ export default function App() {
               <img
                 src={previewModel.img}
                 alt={previewModel.name}
-                className="preview-img"
+                className={`preview-img ${[6, 7, 8, 9, 10, 11, 24, 25].includes(previewModel.look) ? 'preview-img-neck' : ''}`}
               />
             </div>
             <div className="preview-caption">
@@ -2150,6 +2157,17 @@ export default function App() {
                   <h3 className="preview-title wide">{previewModel.name}</h3>
                 </div>
                 <div className="preview-price-box">
+                  <button
+                    type="button"
+                    className={`preview-heart-btn ${wishlist.includes(previewModel.look) ? 'active' : ''}`}
+                    onClick={() => togglePackageWishlist(previewModel.look - 1)}
+                    aria-label="Like product"
+                    title="Like this outfit"
+                  >
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.600 4.600 0 0 1 20.500 9C20.500 15 12 20 12 20Z" />
+                    </svg>
+                  </button>
                   <span className="preview-price-val">{previewModel.price}</span>
                   <span className="preview-price-sub">3-PC SET</span>
                 </div>
