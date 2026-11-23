@@ -1005,19 +1005,21 @@ a:focus-visible {
         margin-top: 1px;
     }
 
-    /* Mobile Preview Lightbox Adjustments */
+    /* Mobile Preview Lightbox Adjustments - Fullscreen Immersion */
     .preview-overlay {
-        padding: 12px 10px 14px;
+        padding: 0;
         background: rgba(6, 10, 18, 0.94);
         backdrop-filter: blur(24px);
         -webkit-backdrop-filter: blur(24px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         align-items: center;
-        justify-content: center;
     }
 
     .preview-close-btn {
-        top: 12px;
-        right: 12px;
+        top: 14px;
+        right: 14px;
         width: 38px;
         height: 38px;
         font-size: 18px;
@@ -1027,28 +1029,39 @@ a:focus-visible {
     }
 
     .preview-content {
+        width: 100%;
+        height: 100%;
         max-width: 100%;
         max-height: 100%;
-        width: 100%;
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 36px;
+        box-sizing: border-box;
     }
 
     .preview-img {
-        max-height: 44vh;
-        max-height: clamp(230px, 44vh, 340px);
-        max-width: 88vw;
-        filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.5));
+        flex: 1;
+        min-height: 0;
+        max-height: 64vh;
+        width: auto;
+        max-width: 94vw;
+        object-fit: contain;
+        object-position: bottom center;
+        filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.55));
+        margin-bottom: 4px;
     }
 
     .preview-caption {
-        margin-top: 8px;
-        padding: 12px 16px 14px;
-        border-radius: 14px;
-        max-width: 360px;
         width: 100%;
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+        margin-top: 0;
+        padding: 14px 20px 22px;
         box-sizing: border-box;
         background: #ffffff;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.45);
     }
 
     .preview-look-badge {
@@ -1058,43 +1071,45 @@ a:focus-visible {
     }
 
     .preview-title {
-        font-size: 12.5px;
+        font-size: 13.5px;
         letter-spacing: .1em;
         margin: 2px 0;
         line-height: 1.25;
     }
 
     .preview-code {
-        font-size: 9px;
+        font-size: 9.5px;
         margin-bottom: 4px;
         letter-spacing: .06em;
     }
 
     .preview-price-box {
-        margin: 4px 0;
+        margin: 4px 0 6px;
         gap: 6px;
     }
 
     .preview-price-val {
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #0f172a;
     }
 
     .preview-price-sub {
-        font-size: 8.5px;
+        font-size: 9px;
         padding: 2px 6px;
     }
 
     .preview-pieces-list {
-        font-size: 9.5px;
-        margin-bottom: 8px;
-        line-height: 1.3;
+        font-size: 10px;
+        margin-bottom: 10px;
+        line-height: 1.35;
     }
 
     .preview-shop-btn {
         width: 100%;
-        padding: 11px 16px;
-        font-size: 11px;
-        letter-spacing: .1em;
+        padding: 12px 16px;
+        font-size: 11.5px;
+        letter-spacing: .12em;
         border-radius: 8px;
     }
 }
