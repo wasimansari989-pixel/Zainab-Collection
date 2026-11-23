@@ -2136,18 +2136,23 @@ export default function App() {
           </button>
 
           <div className="preview-content" onClick={(e) => e.stopPropagation()}>
-            <img
-              src={previewModel.img}
-              alt={previewModel.name}
-              className="preview-img"
-            />
+            <div className="preview-img-box">
+              <img
+                src={previewModel.img}
+                alt={previewModel.name}
+                className="preview-img"
+              />
+            </div>
             <div className="preview-caption">
-              <span className="preview-look-badge wide">LOOK {previewModel.look} • RAJWADA EXCLUSIVE</span>
-              <h3 className="preview-title wide">{previewModel.name}</h3>
-              <p className="preview-code">{previewModel.code} • 3-PIECE COMPLETE ENSEMBLE</p>
-              <div className="preview-price-box">
-                <span className="preview-price-val">{previewModel.price}</span>
-                <span className="preview-price-sub">Complete Package Price</span>
+              <div className="preview-caption-top">
+                <div className="preview-caption-titles">
+                  <span className="preview-look-badge wide">LOOK {previewModel.look} • {previewModel.code}</span>
+                  <h3 className="preview-title wide">{previewModel.name}</h3>
+                </div>
+                <div className="preview-price-box">
+                  <span className="preview-price-val">{previewModel.price}</span>
+                  <span className="preview-price-sub">3-PC SET</span>
+                </div>
               </div>
               <p className="preview-pieces-list">
                 Includes: <span>Kurti / Top</span> + <span>Bottom / Sharara</span> + <span>Organza Dupatta</span>
@@ -2161,7 +2166,7 @@ export default function App() {
                   setCartOpen(true);
                 }}
               >
-                Shop Complete Set ({previewModel.price})
+                Shop Complete Set • {previewModel.price}
               </button>
             </div>
           </div>
