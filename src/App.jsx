@@ -82,6 +82,104 @@ const MODELS = [
     code: 'ZC-3803',
     img: '/model_3803.png',
     r: 1280 / 1920 // 0.6667
+  },
+  {
+    look: 12,
+    name: 'Mehrunisa Rose Wine Festive Set',
+    code: 'ZC-4024',
+    img: '/model_4024.png',
+    r: 0.6667
+  },
+  {
+    look: 13,
+    name: 'Zohra Antique Brass Gold Set',
+    code: 'ZC-4026',
+    img: '/model_4026.png',
+    r: 0.6667
+  },
+  {
+    look: 14,
+    name: 'Nilofer Seafoam Slate Ensemble',
+    code: 'ZC-4010',
+    img: '/model_4010.png',
+    r: 0.6667
+  },
+  {
+    look: 15,
+    name: 'Anarkali Rust Ochre Festive Set',
+    code: 'ZC-4009',
+    img: '/model_4009.png',
+    r: 0.6667
+  },
+  {
+    look: 16,
+    name: 'Parizaad Sage Willow Chanderi Set',
+    code: 'ZC-91124',
+    img: '/model_91124.png',
+    r: 0.7544
+  },
+  {
+    look: 17,
+    name: 'Shab-e-Noor Midnight Black Ensemble',
+    code: 'ZC-1116',
+    img: '/model_1116.png',
+    r: 0.5794
+  },
+  {
+    look: 18,
+    name: 'Yasmin Mint Celadon Festive Suit',
+    code: 'ZC-91075',
+    img: '/model_91075.png',
+    r: 0.7544
+  },
+  {
+    look: 19,
+    name: 'Firdaus Peach Coral Festive Ensemble',
+    code: 'ZC-91075-1',
+    img: '/model_91075_1.png',
+    r: 0.7544
+  },
+  {
+    look: 20,
+    name: 'Mumtaz Pearl Champagne Ensemble',
+    code: 'ZC-91125',
+    img: '/model_91125.png',
+    r: 0.7544
+  },
+  {
+    look: 21,
+    name: 'Gul-e-Rana Plum & Ivory Festive Set',
+    code: 'ZC-9033-2',
+    img: '/model_9033_2.png',
+    r: 0.5000
+  },
+  {
+    look: 22,
+    name: 'Bahaar Teal & Cream Silk Set',
+    code: 'ZC-9033-1',
+    img: '/model_9033_1.png',
+    r: 0.7544
+  },
+  {
+    look: 23,
+    name: 'Dilkash Crimson & Off-White Set',
+    code: 'ZC-9033-3',
+    img: '/model_9033_3.png',
+    r: 0.7544
+  },
+  {
+    look: 24,
+    name: 'Jahanara Emerald Peacock Ensemble',
+    code: 'ZC-9703',
+    img: '/model_9703.png',
+    r: 0.6667
+  },
+  {
+    look: 25,
+    name: 'Gul-e-Dawood Silver Sage Suit',
+    code: 'ZC-NO-1',
+    img: '/model_no_1.png',
+    r: 0.6667
   }
 ];
 
@@ -392,6 +490,384 @@ const ITEMS = [
     price: '₹1,199',
     priceVal: 1199,
     img: '/dupatta_3803_card.png'
+  },
+  // =========================================
+  // LOOK 12 (ZC-4024)
+  // =========================================
+  {
+    name: 'Handcrafted Rose Wine Kurti',
+    category: 'ZC-4024',
+    look: 12,
+    price: '₹2,950',
+    priceVal: 2950,
+    img: '/kurta_4024.png'
+  },
+  {
+    name: 'Flared Berry Silk Palazzo',
+    category: 'ZC-4024',
+    look: 12,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_4024.png'
+  },
+  {
+    name: 'Organza Zari Border Dupatta',
+    category: 'ZC-4024',
+    look: 12,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_4024_card.png'
+  },
+  // =========================================
+  // LOOK 13 (ZC-4026)
+  // =========================================
+  {
+    name: 'Handcrafted Brass Gold Kurti',
+    category: 'ZC-4026',
+    look: 13,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_4026.png'
+  },
+  {
+    name: 'Flared Khaki Silk Palazzo',
+    category: 'ZC-4026',
+    look: 13,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_4026.png'
+  },
+  {
+    name: 'Embroidered Organza Gold Dupatta',
+    category: 'ZC-4026',
+    look: 13,
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_4026_card.png'
+  },
+  // =========================================
+  // LOOK 14 (ZC-4010)
+  // =========================================
+  {
+    name: 'Seafoam Slate Embroidered Kurti',
+    category: 'ZC-4010',
+    look: 14,
+    price: '₹2,999',
+    priceVal: 2999,
+    img: '/kurta_4010.png'
+  },
+  {
+    name: 'Flared Silver Mist Palazzo Pants',
+    category: 'ZC-4010',
+    look: 14,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_4010.png'
+  },
+  {
+    name: 'Handcrafted Scalloped Net Dupatta',
+    category: 'ZC-4010',
+    look: 14,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_4010_card.png'
+  },
+  // =========================================
+  // LOOK 15 (ZC-4009)
+  // =========================================
+  {
+    name: 'Burnt Ochre Embroidered Kurti',
+    category: 'ZC-4009',
+    look: 15,
+    price: '₹2,850',
+    priceVal: 2850,
+    img: '/kurta_4009.png'
+  },
+  {
+    name: 'Flared Rust Silk Blend Palazzo',
+    category: 'ZC-4009',
+    look: 15,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_4009.png'
+  },
+  {
+    name: 'Organza Zari Embroidered Dupatta',
+    category: 'ZC-4009',
+    look: 15,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_4009_card.png'
+  },
+  // =========================================
+  // LOOK 16 (ZC-91124)
+  // =========================================
+  {
+    name: 'Handcrafted Sage Willow Kurti',
+    category: 'ZC-91124',
+    look: 16,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_91124.png'
+  },
+  {
+    name: 'Flared Chanderi Silk Palazzo',
+    category: 'ZC-91124',
+    look: 16,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_91124.png'
+  },
+  {
+    name: 'Organza Pastel Scalloped Dupatta',
+    category: 'ZC-91124',
+    look: 16,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_91124_card.png'
+  },
+  // =========================================
+  // LOOK 17 (ZC-1116)
+  // =========================================
+  {
+    name: 'Midnight Black Zari Kurta',
+    category: 'ZC-1116',
+    look: 17,
+    price: '₹3,199',
+    priceVal: 3199,
+    img: '/kurta_1116.png'
+  },
+  {
+    name: 'Flared Noir Silk Palazzo Pants',
+    category: 'ZC-1116',
+    look: 17,
+    price: '₹1,650',
+    priceVal: 1650,
+    img: '/palazzo_1116.png'
+  },
+  {
+    name: 'Embroidered Onyx Zari Border Dupatta',
+    category: 'ZC-1116',
+    look: 17,
+    price: '₹1,250',
+    priceVal: 1250,
+    img: '/dupatta_1116_card.png'
+  },
+  // =========================================
+  // LOOK 18 (ZC-91075)
+  // =========================================
+  {
+    name: 'Embroidered Celadon Silk Kurti',
+    category: 'ZC-91075',
+    look: 18,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_91075.png'
+  },
+  {
+    name: 'Flared Mint Silk Blend Palazzo',
+    category: 'ZC-91075',
+    look: 18,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_91075.png'
+  },
+  {
+    name: 'Organza Hand Embroidered Dupatta',
+    category: 'ZC-91075',
+    look: 18,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_91075_card.png'
+  },
+  // =========================================
+  // LOOK 19 (ZC-91075-1)
+  // =========================================
+  {
+    name: 'Peach Coral Zari Embroidered Kurti',
+    category: 'ZC-91075-1',
+    look: 19,
+    price: '₹2,950',
+    priceVal: 2950,
+    img: '/kurta_91075_1.png'
+  },
+  {
+    name: 'Flared Blushed Apricot Palazzo',
+    category: 'ZC-91075-1',
+    look: 19,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_91075_1.png'
+  },
+  {
+    name: 'Organza Coral Scallop Dupatta',
+    category: 'ZC-91075-1',
+    look: 19,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_91075_1_card.png'
+  },
+  // =========================================
+  // LOOK 20 (ZC-91125)
+  // =========================================
+  {
+    name: 'Handcrafted Pearl Champagne Kurti',
+    category: 'ZC-91125',
+    look: 20,
+    price: '₹2,999',
+    priceVal: 2999,
+    img: '/kurta_91125.png'
+  },
+  {
+    name: 'Flared Almond Silk Palazzo Pants',
+    category: 'ZC-91125',
+    look: 20,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_91125.png'
+  },
+  {
+    name: 'Organza Pearl Border Dupatta',
+    category: 'ZC-91125',
+    look: 20,
+    price: '₹1,199',
+    priceVal: 1199,
+    img: '/dupatta_91125_card.png'
+  },
+  // =========================================
+  // LOOK 21 (ZC-9033-2)
+  // =========================================
+  {
+    name: 'Ivory Zari Embroidered Kurta',
+    category: 'ZC-9033-2',
+    look: 21,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_9033_2.png'
+  },
+  {
+    name: 'Flared Deep Plum Silk Palazzo',
+    category: 'ZC-9033-2',
+    look: 21,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_9033_2.png'
+  },
+  {
+    name: 'Organza Plum Border Pure Dupatta',
+    category: 'ZC-9033-2',
+    look: 21,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_9033_2_card.png'
+  },
+  // =========================================
+  // LOOK 22 (ZC-9033-1)
+  // =========================================
+  {
+    name: 'Cream Embroidered Zari Kurti',
+    category: 'ZC-9033-1',
+    look: 22,
+    price: '₹2,850',
+    priceVal: 2850,
+    img: '/kurta_9033_1.png'
+  },
+  {
+    name: 'Flared Deep Teal Silk Palazzo',
+    category: 'ZC-9033-1',
+    look: 22,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_9033_1.png'
+  },
+  {
+    name: 'Organza Teal Border Dupatta',
+    category: 'ZC-9033-1',
+    look: 22,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_9033_1_card.png'
+  },
+  // =========================================
+  // LOOK 23 (ZC-9033-3)
+  // =========================================
+  {
+    name: 'Off-White Handcrafted Zari Kurta',
+    category: 'ZC-9033-3',
+    look: 23,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_9033_3.png'
+  },
+  {
+    name: 'Flared Crimson Maroon Silk Palazzo',
+    category: 'ZC-9033-3',
+    look: 23,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_9033_3.png'
+  },
+  {
+    name: 'Organza Crimson Scallop Dupatta',
+    category: 'ZC-9033-3',
+    look: 23,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_9033_3_card.png'
+  },
+  // =========================================
+  // LOOK 24 (ZC-9703)
+  // =========================================
+  {
+    name: 'Emerald Peacock Zari Kurti',
+    category: 'ZC-9703',
+    look: 24,
+    price: '₹3,099',
+    priceVal: 3099,
+    img: '/kurta_9703.png'
+  },
+  {
+    name: 'Flared Deep Peacock Silk Pants',
+    category: 'ZC-9703',
+    look: 24,
+    price: '₹1,599',
+    priceVal: 1599,
+    img: '/palazzo_9703.png'
+  },
+  {
+    name: 'Embroidered Peacock Organza Dupatta',
+    category: 'ZC-9703',
+    look: 24,
+    price: '₹1,250',
+    priceVal: 1250,
+    img: '/dupatta_9703_card.png'
+  },
+  // =========================================
+  // LOOK 25 (ZC-NO-1)
+  // =========================================
+  {
+    name: 'Silver Sage Embroidered Kurti',
+    category: 'ZC-NO-1',
+    look: 25,
+    price: '₹2,899',
+    priceVal: 2899,
+    img: '/kurta_no_1.png'
+  },
+  {
+    name: 'Flared Eucalyptus Silk Palazzo',
+    category: 'ZC-NO-1',
+    look: 25,
+    price: '₹1,550',
+    priceVal: 1550,
+    img: '/palazzo_no_1.png'
+  },
+  {
+    name: 'Organza Silver Sage Border Dupatta',
+    category: 'ZC-NO-1',
+    look: 25,
+    price: '₹1,150',
+    priceVal: 1150,
+    img: '/dupatta_no_1_card.png'
   }
 ];
 
@@ -401,7 +877,7 @@ const KH = [1.18, 0.832, 0.574, 0.436, 0.334, 0.258, 0.19];
 const KB = [0, 0, 1.5, 4, 8, 12, 17];
 const KO = [1, 1, 1, 1, 0.86, 0.5, 0];
 
-const N = 11;
+const N = 25;
 const FIRST = 1;
 
 const wrap = (x, n) => ((x % n) + n) % n;
@@ -921,7 +1397,63 @@ export default function App() {
       '/dupatta_3762_card.png',
       '/kurta_3803.png',
       '/palazzo_3803.png',
-      '/dupatta_3803_card.png'
+      '/dupatta_3803_card.png',
+      '/model_4024.png',
+      '/kurta_4024.png',
+      '/palazzo_4024.png',
+      '/dupatta_4024_card.png',
+      '/model_4026.png',
+      '/kurta_4026.png',
+      '/palazzo_4026.png',
+      '/dupatta_4026_card.png',
+      '/model_4010.png',
+      '/kurta_4010.png',
+      '/palazzo_4010.png',
+      '/dupatta_4010_card.png',
+      '/model_4009.png',
+      '/kurta_4009.png',
+      '/palazzo_4009.png',
+      '/dupatta_4009_card.png',
+      '/model_91124.png',
+      '/kurta_91124.png',
+      '/palazzo_91124.png',
+      '/dupatta_91124_card.png',
+      '/model_1116.png',
+      '/kurta_1116.png',
+      '/palazzo_1116.png',
+      '/dupatta_1116_card.png',
+      '/model_91075.png',
+      '/kurta_91075.png',
+      '/palazzo_91075.png',
+      '/dupatta_91075_card.png',
+      '/model_91075_1.png',
+      '/kurta_91075_1.png',
+      '/palazzo_91075_1.png',
+      '/dupatta_91075_1_card.png',
+      '/model_91125.png',
+      '/kurta_91125.png',
+      '/palazzo_91125.png',
+      '/dupatta_91125_card.png',
+      '/model_9033_2.png',
+      '/kurta_9033_2.png',
+      '/palazzo_9033_2.png',
+      '/dupatta_9033_2_card.png',
+      '/model_9033_1.png',
+      '/kurta_9033_1.png',
+      '/palazzo_9033_1.png',
+      '/dupatta_9033_1_card.png',
+      '/model_9033_3.png',
+      '/kurta_9033_3.png',
+      '/palazzo_9033_3.png',
+      '/dupatta_9033_3_card.png',
+      '/model_9703.png',
+      '/kurta_9703.png',
+      '/palazzo_9703.png',
+      '/dupatta_9703_card.png',
+      '/model_no_1.png',
+      '/kurta_no_1.png',
+      '/palazzo_no_1.png',
+      '/dupatta_no_1_card.png'
     ];
 
     Promise.all(
