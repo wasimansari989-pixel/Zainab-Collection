@@ -11,175 +11,225 @@ const MODELS = [
     name: 'Gul-e-Noor Zari Suit',
     code: 'ZC-9033',
     img: '/model_9033.png',
-    r: 1136 / 2000 // 0.568
+    r: 0.568,
+    price: '₹4,929',
+    priceVal: 4929
   },
   {
     look: 2,
     name: 'Nazakat Peplum & Sharara',
     code: 'ZC-2601',
     img: '/model_2601.png',
-    r: 1216 / 1968 // 0.6179
+    r: 0.6178861788617886,
+    price: '₹5,499',
+    priceVal: 5499
   },
   {
     look: 3,
     name: 'Shehr-e-Khaas Mink Ensemble',
     code: 'ZC-1435',
     img: '/model_1435.png',
-    r: 1152 / 2176 // 0.5294
+    r: 0.5294117647058824,
+    price: '₹5,599',
+    priceVal: 5599
   },
   {
     look: 4,
     name: 'Afreen Peach Gold Anarkali',
     code: 'ZC-9018',
     img: '/model_9018.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,797',
+    priceVal: 5797
   },
   {
     look: 5,
     name: 'Gul-e-Lalarukh Terracotta Suit',
     code: 'ZC-NO',
     img: '/model_no.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,548',
+    priceVal: 5548
   },
   {
     look: 6,
     name: 'Nazneen Champagne Rose Suit',
     code: 'ZC-3763',
     img: '/model_3763.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,599',
+    priceVal: 5599
   },
   {
     look: 7,
     name: 'Rukhsaar Cinnamon Rust Ensemble',
     code: 'ZC-4022',
     img: '/model_4022.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,697',
+    priceVal: 5697
   },
   {
     look: 8,
     name: 'Mehtab Dusty Rose Festive Suit',
     code: 'ZC-4029',
     img: '/model_4029.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,599',
+    priceVal: 5599
   },
   {
     look: 9,
     name: 'Aaira Smoky Mauve Handcrafted Suit',
     code: 'ZC-3802',
     img: '/model_3802.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,650',
+    priceVal: 5650
   },
   {
     look: 10,
     name: 'Noor-e-Zeba Olive Gold Set',
     code: 'ZC-3762',
     img: '/model_3762.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,699',
+    priceVal: 5699
   },
   {
     look: 11,
     name: 'Afnan Charcoal Slate Ensemble',
     code: 'ZC-3803',
     img: '/model_3803.png',
-    r: 1280 / 1920 // 0.6667
+    r: 0.6666666666666666,
+    price: '₹5,648',
+    priceVal: 5648
   },
   {
     look: 12,
     name: 'Mehrunisa Rose Wine Festive Set',
     code: 'ZC-4024',
     img: '/model_4024.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,699',
+    priceVal: 5699
   },
   {
     look: 13,
     name: 'Zohra Antique Brass Gold Set',
     code: 'ZC-4026',
     img: '/model_4026.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,648',
+    priceVal: 5648
   },
   {
     look: 14,
     name: 'Nilofer Seafoam Slate Ensemble',
     code: 'ZC-4010',
     img: '/model_4010.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,748',
+    priceVal: 5748
   },
   {
     look: 15,
     name: 'Anarkali Rust Ochre Festive Set',
     code: 'ZC-4009',
     img: '/model_4009.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,550',
+    priceVal: 5550
   },
   {
     look: 16,
     name: 'Parizaad Sage Willow Chanderi Set',
     code: 'ZC-91124',
     img: '/model_91124.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,648',
+    priceVal: 5648
   },
   {
     look: 17,
     name: 'Shab-e-Noor Midnight Black Ensemble',
     code: 'ZC-1116',
     img: '/model_1116.png',
-    r: 0.5794
+    r: 0.5794,
+    price: '₹6,099',
+    priceVal: 6099
   },
   {
     look: 18,
     name: 'Yasmin Mint Celadon Festive Suit',
     code: 'ZC-91075',
     img: '/model_91075.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,599',
+    priceVal: 5599
   },
   {
     look: 19,
     name: 'Firdaus Peach Coral Festive Ensemble',
     code: 'ZC-91075-1',
     img: '/model_91075_1.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,699',
+    priceVal: 5699
   },
   {
     look: 20,
     name: 'Mumtaz Pearl Champagne Ensemble',
     code: 'ZC-91125',
     img: '/model_91125.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,748',
+    priceVal: 5748
   },
   {
     look: 21,
     name: 'Gul-e-Rana Plum & Ivory Festive Set',
     code: 'ZC-9033-2',
     img: '/model_9033_2.png',
-    r: 0.5000
+    r: 0.5,
+    price: '₹5,648',
+    priceVal: 5648
   },
   {
     look: 22,
     name: 'Bahaar Teal & Cream Silk Set',
     code: 'ZC-9033-1',
     img: '/model_9033_1.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,550',
+    priceVal: 5550
   },
   {
     look: 23,
     name: 'Dilkash Crimson & Off-White Set',
     code: 'ZC-9033-3',
     img: '/model_9033_3.png',
-    r: 0.7544
+    r: 0.7544,
+    price: '₹5,648',
+    priceVal: 5648
   },
   {
     look: 24,
     name: 'Jahanara Emerald Peacock Ensemble',
     code: 'ZC-9703',
     img: '/model_9703.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,948',
+    priceVal: 5948
   },
   {
     look: 25,
     name: 'Gul-e-Dawood Silver Sage Suit',
     code: 'ZC-NO-1',
     img: '/model_no_1.png',
-    r: 0.6667
+    r: 0.6667,
+    price: '₹5,599',
+    priceVal: 5599
   }
 ];
 
@@ -896,12 +946,16 @@ const STORE_INFO = {
 export default function App() {
   const stageRef = useRef(null);
   const railRef = useRef(null);
-  const ringRef = useRef(null);
   const rollRef = useRef(null);
   const lineRef = useRef(null);
   const currentLookRef = useRef(0);
+  const lookNameRef = useRef(null);
+  const lookPriceRef = useRef(null);
+  const lookFavRef = useRef(null);
+  const wishlistRef = useRef([]);
 
   // Modals & Drawers state
+  const [previewModel, setPreviewModel] = useState(null);
   const [cartOpen, setCartOpen] = useState(false);
   const [wishlistOpen, setWishlistOpen] = useState(false);
   const [storeOpen, setStoreOpen] = useState(false);
@@ -912,7 +966,7 @@ export default function App() {
   // Cart & Wishlist items state
   const [cart, setCart] = useState(() => {
     try {
-      const s = localStorage.getItem('zc_cart_items');
+      const s = localStorage.getItem('zc_cart_package_items');
       return s ? JSON.parse(s) : [];
     } catch {
       return [];
@@ -921,33 +975,56 @@ export default function App() {
 
   const [wishlist, setWishlist] = useState(() => {
     try {
-      const s = localStorage.getItem('zc_wishlist_items');
-      return s ? JSON.parse(s) : [0, 1];
+      const s = localStorage.getItem('zc_wishlist_looks');
+      return s ? JSON.parse(s) : [1, 2];
     } catch {
-      return [0, 1];
+      return [1, 2];
     }
   });
 
   useEffect(() => {
-    localStorage.setItem('zc_cart_items', JSON.stringify(cart));
+    localStorage.setItem('zc_cart_package_items', JSON.stringify(cart));
   }, [cart]);
 
   useEffect(() => {
-    localStorage.setItem('zc_wishlist_items', JSON.stringify(wishlist));
+    localStorage.setItem('zc_wishlist_looks', JSON.stringify(wishlist));
+    wishlistRef.current = wishlist;
   }, [wishlist]);
 
   const totalCartCount = cart.reduce((sum, it) => sum + it.qty, 0);
 
-  const addToCart = (index) => {
-    const item = ITEMS[index];
+  const addPackageToCart = (lookIdx) => {
+    const model = MODELS[lookIdx];
+    if (!model) return;
+    const item1 = ITEMS[lookIdx * 3];
+    const item2 = ITEMS[lookIdx * 3 + 1];
+    const item3 = ITEMS[lookIdx * 3 + 2];
+    const piecesList = [
+      item1?.name || 'Embroidered Kurti',
+      item2?.name || 'Flared Bottom / Sharara',
+      item3?.name || 'Organza Dupatta'
+    ];
+
     setCart((prev) => {
-      const existing = prev.find((it) => it.index === index);
+      const existing = prev.find((it) => it.look === model.look);
       if (existing) {
         return prev.map((it) =>
-          it.index === index ? { ...it, qty: it.qty + 1 } : it
+          it.look === model.look ? { ...it, qty: it.qty + 1 } : it
         );
       }
-      return [...prev, { index, name: item.name, price: item.price, priceVal: item.priceVal, qty: 1, img: item.img }];
+      return [
+        ...prev,
+        {
+          look: model.look,
+          name: `${model.name} (Complete 3-Piece Set)`,
+          code: model.code,
+          price: model.price,
+          priceVal: model.priceVal,
+          qty: 1,
+          img: model.img,
+          pieces: piecesList
+        }
+      ];
     });
 
     confetti({
@@ -957,42 +1034,49 @@ export default function App() {
     });
   };
 
-  const removeFromCart = (index) => {
-    setCart((prev) => prev.filter((it) => it.index !== index));
+  const removeFromCart = (look) => {
+    setCart((prev) => prev.filter((it) => it.look !== look));
   };
 
-  const updateCartQty = (index, delta) => {
+  const updateCartQty = (look, delta) => {
     setCart((prev) =>
       prev
-        .map((it) => (it.index === index ? { ...it, qty: it.qty + delta } : it))
+        .map((it) => (it.look === look ? { ...it, qty: it.qty + delta } : it))
         .filter((it) => it.qty > 0)
     );
   };
 
-  const toggleWishlist = (index) => {
-    setWishlist((prev) =>
-      prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index]
-    );
+  const togglePackageWishlist = (lookIdx) => {
+    const model = MODELS[lookIdx];
+    if (!model) return;
+    const lookNum = model.look;
+    setWishlist((prev) => {
+      const next = prev.includes(lookNum)
+        ? prev.filter((id) => id !== lookNum)
+        : [...prev, lookNum];
+      if (lookFavRef.current) {
+        lookFavRef.current.classList.toggle('active', next.includes(lookNum));
+      }
+      return next;
+    });
   };
 
   const shopCurrentLook = () => {
     const lookIdx = wrap(Math.round(currentLookRef.current), N);
-    const item1Idx = (lookIdx * 3) % ITEMS.length;
-    const item2Idx = (lookIdx * 3 + 1) % ITEMS.length;
-    const item3Idx = (lookIdx * 3 + 2) % ITEMS.length;
-    addToCart(item1Idx);
-    addToCart(item2Idx);
-    addToCart(item3Idx);
+    addPackageToCart(lookIdx);
     setCartOpen(true);
   };
 
   const handleWhatsAppCheckout = () => {
     if (cart.length === 0) return;
     const itemsList = cart
-      .map((it, i) => `${i + 1}. *${it.name}* (${it.price}) x ${it.qty}`)
-      .join('\n');
+      .map(
+        (it, i) =>
+          `${i + 1}. *Look ${it.look}: ${it.name} (${it.code})*\n   • Included Pieces: ${it.pieces.join(' + ')}\n   • Package Price: ${it.price} x ${it.qty} = ₹${(it.priceVal * it.qty).toLocaleString('en-IN')}`
+      )
+      .join('\n\n');
     const total = cart.reduce((sum, it) => sum + it.priceVal * it.qty, 0);
-    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Pieces:*\n${itemsList}\n\n*Total Amount:* ₹${total.toLocaleString('en-IN')}\n*Store Location:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
+    const msg = `✨ *NEW ORDER FROM ZAINAB COLLECTION RUNWAY*\n\n*Selected Complete Suit Packages:*\n${itemsList}\n\n*Total Order Amount:* ₹${total.toLocaleString('en-IN')}\n*Store Location:* ${STORE_INFO.address}\n\nPlease confirm availability and trial at your Rajwada shop. Thank you!`;
     window.open(`https://wa.me/${STORE_INFO.whatsapp}?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
@@ -1002,10 +1086,9 @@ export default function App() {
   useEffect(() => {
     const stage = stageRef.current;
     const rail = railRef.current;
-    const ring = ringRef.current;
     const roll = rollRef.current;
     const line = lineRef.current;
-    if (!stage || !rail || !ring || !roll || !line) return;
+    if (!stage || !rail || !roll || !line) return;
 
     line.innerHTML = '';
     rail.innerHTML = '';
@@ -1038,25 +1121,18 @@ export default function App() {
       };
     });
 
-    // Create Product Cards in Rail (Cropped clothes from 11.jpg)
+    // Create Product Cards in Rail (Clean package piece presentation without separate prices or cart/like buttons)
+    const pieceLabels = ['01 • KURTI / TOP', '02 • BOTTOM / SHARARA', '03 • DUPATTA'];
     const cardElements = ITEMS.map((item, i) => {
       const e = document.createElement('article');
       e.className = 'card' + (i % 2 ? ' alt' : '');
       e.dataset.index = i;
+      e.dataset.look = Math.floor(i / 3);
 
-      const isFav = wishlist.includes(i);
+      const pieceLabel = pieceLabels[i % 3];
 
       e.innerHTML = `
-        <button
-          class="fav ${isFav ? 'active' : ''}"
-          aria-pressed="${isFav}"
-          aria-label="Save ${item.name}"
-          data-fav-index="${i}"
-        >
-          <svg viewBox="0 0 24 24">
-            <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.600 4.600 0 0 1 20.500 9C20.500 15 12 20 12 20Z"/>
-          </svg>
-        </button>
+        <div class="card-piece-tag wide">${pieceLabel}</div>
 
         <span class="shot">
           <img src="${item.img}" alt="${item.name}" loading="lazy" style="width: 100%; height: 100%; object-fit: contain;" />
@@ -1064,12 +1140,7 @@ export default function App() {
 
         <div class="meta">
           <h3 class="wide">${item.name}</h3>
-          <span>${item.price}</span>
-          <button
-            class="add"
-            aria-label="Add ${item.name} to cart"
-            data-add-index="${i}"
-          ></button>
+          <span class="card-set-tag">Included in 3-Pc Set</span>
         </div>
       `;
 
@@ -1084,22 +1155,16 @@ export default function App() {
       roll.append(b);
     }
 
-    // Event Delegation for Rail Clicks
+    // Event Delegation: Tapping any piece card previews the look with complete outfit
     const onRailClick = (e) => {
-      const favBtn = e.target.closest('[data-fav-index]');
-      if (favBtn) {
-        const idx = parseInt(favBtn.dataset.favIndex, 10);
-        toggleWishlist(idx);
-        const nextFav = favBtn.getAttribute('aria-pressed') !== 'true';
-        favBtn.setAttribute('aria-pressed', nextFav);
-        favBtn.classList.toggle('active', nextFav);
-        return;
-      }
-
-      const addBtn = e.target.closest('[data-add-index]');
-      if (addBtn) {
-        const idx = parseInt(addBtn.dataset.addIndex, 10);
-        addToCart(idx);
+      const card = e.target.closest('.card');
+      if (card) {
+        const itemIdx = parseInt(card.dataset.index, 10);
+        const lookIdx = Math.floor(itemIdx / 3);
+        const clickedModel = MODELS[lookIdx];
+        if (clickedModel) {
+          setPreviewModel(clickedModel);
+        }
       }
     };
 
@@ -1203,6 +1268,19 @@ export default function App() {
       if (roll.firstChild) {
         roll.style.transform = `translate3d(0, ${(-wrap(p, N) * roll.firstChild.offsetHeight).toFixed(1)}px, 0)`;
       }
+
+      // Sync active look package title, single price, and wishlist state
+      const activeIdx = wrap(Math.round(p), N);
+      if (lookNameRef.current && lookNameRef.current.dataset.idx !== String(activeIdx)) {
+        lookNameRef.current.dataset.idx = String(activeIdx);
+        lookNameRef.current.textContent = MODELS[activeIdx].name;
+        if (lookPriceRef.current) lookPriceRef.current.textContent = MODELS[activeIdx].price;
+        if (lookFavRef.current) {
+          const isFav = wishlistRef.current.includes(MODELS[activeIdx].look);
+          lookFavRef.current.setAttribute('aria-pressed', isFav ? 'true' : 'false');
+          lookFavRef.current.classList.toggle('active', isFav);
+        }
+      }
     }
 
     // Pointer & Drag Engine
@@ -1217,16 +1295,6 @@ export default function App() {
     let wheelT = 0;
 
     const PULL = () => Math.max(150, W * 0.2);
-
-    const onPointerEnter = (e) => {
-      if (e.pointerType === 'mouse') {
-        ring.classList.add('show');
-      }
-    };
-
-    const onPointerLeave = () => {
-      ring.classList.remove('show');
-    };
 
     const onPointerMove = (e) => {
       const r = stage.getBoundingClientRect();
@@ -1249,20 +1317,26 @@ export default function App() {
       moved = 0;
 
       stage.setPointerCapture(e.pointerId);
-      ring.classList.add('drag');
     };
 
     const onRelease = (e) => {
       if (!down) return;
       down = false;
-      ring.classList.remove('drag');
 
       if (moved < 6) {
-        const hit = document
-          .elementsFromPoint(e.clientX, e.clientY)
-          .find((x) => x.classList && x.classList.contains('m'));
+        let hit = e.target && e.target.closest ? e.target.closest('.m') : null;
+        if (!hit) {
+          hit = document
+            .elementsFromPoint(e.clientX, e.clientY)
+            .find((x) => x.classList && x.classList.contains('m'));
+        }
 
         if (hit) {
+          const modelIndex = wrap(parseInt(hit.dataset.i, 10), N);
+          const clickedModel = MODELS[modelIndex];
+          if (clickedModel) {
+            setPreviewModel(clickedModel);
+          }
           let d = wrap(+hit.dataset.i - target, N);
           d = Math.round(d);
           if (d > 0 && d < N) {
@@ -1292,6 +1366,9 @@ export default function App() {
         e.preventDefault();
         target = Math.round(target) - 1;
       }
+      if (e.key === 'Escape') {
+        setPreviewModel(null);
+      }
     };
 
     const onRailPointerDown = (e) => {
@@ -1307,8 +1384,6 @@ export default function App() {
       }
     };
 
-    stage.addEventListener('pointerenter', onPointerEnter);
-    stage.addEventListener('pointerleave', onPointerLeave);
     stage.addEventListener('pointermove', onPointerMove);
     stage.addEventListener('pointerdown', onPointerDown);
     stage.addEventListener('pointerup', onRelease);
@@ -1344,11 +1419,6 @@ export default function App() {
       }
 
       currentLookRef.current = p;
-
-      cx += (mx - cx) * 0.32;
-      cy += (my - cy) * 0.32;
-
-      ring.style.transform = `translate3d(${cx.toFixed(1)}px, ${cy.toFixed(1)}px, 0)`;
       animId = requestAnimationFrame(frame);
     }
 
@@ -1481,8 +1551,6 @@ export default function App() {
       rail.removeEventListener('pointermove', onPointerMove);
       rail.removeEventListener('pointerup', onRelease);
       rail.removeEventListener('pointercancel', onRelease);
-      stage.removeEventListener('pointerenter', onPointerEnter);
-      stage.removeEventListener('pointerleave', onPointerLeave);
       stage.removeEventListener('pointermove', onPointerMove);
       stage.removeEventListener('pointerdown', onPointerDown);
       stage.removeEventListener('pointerup', onRelease);
@@ -1611,26 +1679,49 @@ export default function App() {
             </button>
           </div>
 
-          {/* Bottom Left Tag with Rolling Number */}
+          {/* Bottom Left Tag with Rolling Number & Single Package Price Controls */}
           <div className="tag">
-            <div className="look wide" aria-live="polite">
-              <span>Look</span>
-              <span className="win">
-                <span className="roll" ref={rollRef} id="roll"></span>
+            <div className="tag-header">
+              <div className="look wide" aria-live="polite">
+                <span>Look</span>
+                <span className="win">
+                  <span className="roll" ref={rollRef} id="roll"></span>
+                </span>
+              </div>
+
+              <button
+                type="button"
+                ref={lookFavRef}
+                className="tag-fav-btn"
+                onClick={() => togglePackageWishlist(wrap(Math.round(currentLookRef.current), N))}
+                aria-label="Save Complete Suit Package"
+              >
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 20S3.5 15 3.5 9A4.6 4.6 0 0 1 12 6.6 4.600 4.600 0 0 1 20.500 9C20.500 15 12 20 12 20Z"/>
+                </svg>
+              </button>
+            </div>
+
+            <div className="tag-package-info">
+              <span className="tag-look-title wide" ref={lookNameRef}>
+                {MODELS[0].name}
               </span>
+              <div className="tag-price-row">
+                <span className="tag-package-price" ref={lookPriceRef}>
+                  {MODELS[0].price}
+                </span>
+                <span className="tag-package-badge">COMPLETE 3-PC SET</span>
+              </div>
             </div>
 
             <button
               type="button"
-              className="shop wide"
+              className="shop wide tag-shop-btn"
               onClick={shopCurrentLook}
             >
-              Shop the look
+              Shop Complete Look
             </button>
           </div>
-
-          {/* Custom Cursor Ring */}
-          <div className="ring" ref={ringRef} id="ring"></div>
         </section>
 
         {/* PRODUCT RAIL */}
@@ -1675,13 +1766,13 @@ export default function App() {
                   <p className="wide" style={{ fontSize: '11px', letterSpacing: '0.15em', marginBottom: '8px' }}>
                     Your Bag is Empty
                   </p>
-                  <p style={{ fontSize: '13px' }}>Click the (+) icon on any piece to add it to your bag.</p>
+                  <p style={{ fontSize: '13px' }}>Click "Shop Complete Look" on any look to add the complete 3-piece suit package.</p>
                 </div>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
                   {cart.map((item) => (
                     <div
-                      key={item.index}
+                      key={item.look}
                       style={{
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -1694,26 +1785,33 @@ export default function App() {
                         <img
                           src={item.img}
                           alt={item.name}
-                          style={{ width: '50px', height: '65px', objectFit: 'contain', background: '#f8fafc', borderRadius: '6px' }}
+                          style={{ width: '56px', height: '76px', objectFit: 'contain', background: '#f8fafc', borderRadius: '6px' }}
                         />
                         <div>
-                          <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.14em', marginBottom: '4px' }}>
+                          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '2px' }}>
+                            <span style={{ fontSize: '9px', fontWeight: '600', color: '#b98179', letterSpacing: '0.12em' }}>LOOK {item.look}</span>
+                            <span style={{ fontSize: '9px', color: '#94a3b8' }}>• {item.code}</span>
+                          </div>
+                          <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em', marginBottom: '4px' }}>
                             {item.name}
                           </h4>
-                          <span style={{ fontSize: '13px', color: 'var(--mid)' }}>{item.price}</span>
+                          <p style={{ fontSize: '10px', color: '#64748b', marginBottom: '6px', letterSpacing: '0.04em' }}>
+                            {item.pieces.join(' + ')}
+                          </p>
+                          <span style={{ fontSize: '13px', fontWeight: '600', color: '#0f172a' }}>{item.price}</span>
                           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px' }}>
                             <button
                               type="button"
-                              onClick={() => updateCartQty(item.index, -1)}
-                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
+                              onClick={() => updateCartQty(item.look, -1)}
+                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px', cursor: 'pointer' }}
                             >
                               -
                             </button>
                             <span style={{ fontSize: '12px', fontWeight: '500' }}>{item.qty}</span>
                             <button
                               type="button"
-                              onClick={() => updateCartQty(item.index, 1)}
-                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px' }}
+                              onClick={() => updateCartQty(item.look, 1)}
+                              style={{ width: '24px', height: '24px', border: '1px solid var(--line)', borderRadius: '4px', cursor: 'pointer' }}
                             >
                               +
                             </button>
@@ -1721,13 +1819,13 @@ export default function App() {
                         </div>
                       </div>
                       <div style={{ textAlign: 'right' }}>
-                        <span className="wide" style={{ fontSize: '12px', fontWeight: 'bold' }}>
+                        <span className="wide" style={{ fontSize: '13px', fontWeight: 'bold' }}>
                           ₹{(item.priceVal * item.qty).toLocaleString('en-IN')}
                         </span>
                         <button
                           type="button"
-                          onClick={() => removeFromCart(item.index)}
-                          style={{ display: 'block', fontSize: '11px', color: '#b98179', marginTop: '6px' }}
+                          onClick={() => removeFromCart(item.look)}
+                          style={{ display: 'block', fontSize: '11px', color: '#b98179', marginTop: '8px', cursor: 'pointer' }}
                         >
                           Remove
                         </button>
@@ -1789,7 +1887,7 @@ export default function App() {
           <div className="modal-card" onClick={(e) => e.stopPropagation()}>
             <div style={{ padding: '20px 24px', borderBottom: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
               <h3 className="wide" style={{ fontSize: '12px', letterSpacing: '0.18em' }}>
-                Saved Pieces ({wishlist.length})
+                Saved Looks ({wishlist.length})
               </h3>
               <button type="button" onClick={() => setWishlistOpen(false)} style={{ fontSize: '18px' }}>✕</button>
             </div>
@@ -1797,57 +1895,63 @@ export default function App() {
             <div style={{ padding: '20px 24px', maxHeight: '380px', overflowY: 'auto' }}>
               {wishlist.length === 0 ? (
                 <p style={{ color: 'var(--mid)', textAlign: 'center', padding: '30px 0', fontSize: '13px' }}>
-                  No saved items yet. Tap the heart on any card to save it.
+                  No saved looks yet. Tap the heart icon on any look to save the complete outfit package.
                 </p>
               ) : (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                  {wishlist.map((idx) => {
-                    const it = ITEMS[idx];
+                  {wishlist.map((lookNum) => {
+                    const m = MODELS.find((mod) => mod.look === lookNum);
+                    if (!m) return null;
                     return (
                       <div
-                        key={idx}
+                        key={lookNum}
                         style={{
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'space-between',
-                          padding: '10px 14px',
+                          padding: '12px 14px',
                           background: '#f8fafc',
                           borderRadius: '8px'
                         }}
                       >
                         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                          <img src={it.img} alt={it.name} style={{ width: '40px', height: '50px', objectFit: 'contain' }} />
+                          <img src={m.img} alt={m.name} style={{ width: '42px', height: '60px', objectFit: 'contain' }} />
                           <div>
-                            <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it.name}</h4>
-                            <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it.price}</span>
+                            <span style={{ fontSize: '9px', fontWeight: '600', color: '#b98179', letterSpacing: '0.12em' }}>
+                              LOOK {m.look}
+                            </span>
+                            <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em', margin: '2px 0' }}>{m.name}</h4>
+                            <p style={{ fontSize: '10px', color: '#64748b' }}>Complete 3-Piece Set • {m.code}</p>
+                            <span style={{ fontSize: '12px', fontWeight: 'bold', color: '#0f172a' }}>{m.price}</span>
                           </div>
                         </div>
-                        <div style={{ display: 'flex', gap: '10px' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-end' }}>
                           <button
                             type="button"
                             onClick={() => {
-                              addToCart(idx);
+                              addPackageToCart(m.look - 1);
                               setWishlistOpen(false);
                               setCartOpen(true);
                             }}
                             className="wide"
                             style={{
-                              fontSize: '10px',
                               background: 'var(--ink)',
                               color: '#fff',
+                              fontSize: '10px',
+                              letterSpacing: '0.12em',
                               padding: '6px 12px',
                               borderRadius: '4px',
                               cursor: 'pointer'
                             }}
                           >
-                            Add to Cart
+                            Add Set to Bag
                           </button>
                           <button
                             type="button"
-                            onClick={() => toggleWishlist(idx)}
-                            style={{ color: '#b98179', fontSize: '12px', cursor: 'pointer' }}
+                            onClick={() => togglePackageWishlist(m.look - 1)}
+                            style={{ color: '#b98179', fontSize: '11px', cursor: 'pointer' }}
                           >
-                            ✕
+                            Remove
                           </button>
                         </div>
                       </div>
@@ -1973,15 +2077,16 @@ export default function App() {
             </div>
 
             <div style={{ padding: '16px 20px', maxHeight: '300px', overflowY: 'auto' }}>
-              {ITEMS.filter(
-                (it) =>
-                  it.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                  (it.category && it.category.toLowerCase().includes(searchQuery.toLowerCase()))
-              ).map((it, idx) => (
+              {MODELS.filter(
+                (m) =>
+                  m.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                  m.code.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                  `look ${m.look}`.toLowerCase().includes(searchQuery.toLowerCase())
+              ).map((m) => (
                 <div
-                  key={idx}
+                  key={m.look}
                   onClick={() => {
-                    addToCart(idx);
+                    addPackageToCart(m.look - 1);
                     setSearchOpen(false);
                     setCartOpen(true);
                   }}
@@ -1989,18 +2094,75 @@ export default function App() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    padding: '10px 0',
+                    padding: '12px 0',
                     borderBottom: '1px solid var(--line)',
                     cursor: 'pointer'
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <img src={it.img} alt={it.name} style={{ width: '35px', height: '45px', objectFit: 'contain' }} />
-                    <span className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em' }}>{it.name}</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <img src={m.img} alt={m.name} style={{ width: '38px', height: '52px', objectFit: 'contain' }} />
+                    <div>
+                      <span style={{ fontSize: '9px', fontWeight: '600', color: '#b98179', letterSpacing: '0.12em' }}>LOOK {m.look}</span>
+                      <h4 className="wide" style={{ fontSize: '11px', letterSpacing: '0.12em', margin: '2px 0' }}>{m.name}</h4>
+                      <p style={{ fontSize: '10px', color: '#64748b' }}>Complete 3-Piece Set • {m.code}</p>
+                    </div>
                   </div>
-                  <span style={{ fontSize: '12px', color: 'var(--mid)' }}>{it.price}</span>
+                  <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#0f172a' }}>{m.price}</span>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* =========================================
+          FULL SCREEN DUMMY PHOTO LIGHTBOX MODAL
+      ========================================== */}
+      {previewModel && (
+        <div
+          className="preview-overlay"
+          onClick={() => setPreviewModel(null)}
+          role="dialog"
+          aria-modal="true"
+          aria-label={`Preview Look ${previewModel.look}`}
+        >
+          <button
+            type="button"
+            className="preview-close-btn"
+            onClick={() => setPreviewModel(null)}
+            aria-label="Close preview"
+          >
+            ✕
+          </button>
+
+          <div className="preview-content" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={previewModel.img}
+              alt={previewModel.name}
+              className="preview-img"
+            />
+            <div className="preview-caption">
+              <span className="preview-look-badge wide">LOOK {previewModel.look} • RAJWADA EXCLUSIVE</span>
+              <h3 className="preview-title wide">{previewModel.name}</h3>
+              <p className="preview-code">{previewModel.code} • 3-PIECE COMPLETE ENSEMBLE</p>
+              <div className="preview-price-box">
+                <span className="preview-price-val">{previewModel.price}</span>
+                <span className="preview-price-sub">Complete Package Price</span>
+              </div>
+              <p className="preview-pieces-list">
+                Includes: <span>Kurti / Top</span> + <span>Bottom / Sharara</span> + <span>Organza Dupatta</span>
+              </p>
+              <button
+                type="button"
+                className="preview-shop-btn wide"
+                onClick={() => {
+                  addPackageToCart(previewModel.look - 1);
+                  setPreviewModel(null);
+                  setCartOpen(true);
+                }}
+              >
+                Shop Complete Set ({previewModel.price})
+              </button>
             </div>
           </div>
         </div>
